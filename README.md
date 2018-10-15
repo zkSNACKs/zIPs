@@ -30,6 +30,12 @@ Wasabi is also a Bitcoin wallet, therefore it must also improve general Bitcoin 
 
 And finally, there are development opportunities, where the developers of Wasabi recognize they could esily add some unique wallet features, no other wallets do, like in-wallet multi-wallet support, thus section VIII. [Unique Wallet Features](#viii-unique-wallet-features).
 
+Note that, the developers of Wasabi are currently occupied by section II. [Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality). This enjoys the highest priority. New issues will constantly come up as new users try to use the software. At this point it is unclear if Wasabi will ever have the resources to tackle other sections in this document.
+
+### The Structure of Wasabi Wallet
+
+
+
 ## II. Stability, Performance, UX, Code Quality
 https://github.com/zkSNACKs/WalletWasabi/issues/407
 https://github.com/zkSNACKs/WalletWasabi/issues/386
