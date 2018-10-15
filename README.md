@@ -37,7 +37,64 @@ Note that, the developers of Wasabi are currently occupied by section II. [Stabi
 Wasabi is an [open-source](https://github.com/zkSNACKs/WalletWasabi/), desktop Bitcoin wallet, working on Windows, Linux and OSX, written in [.NET Core](https://en.wikipedia.org/wiki/.NET_Core) (C#), which is cross platform and open source .NET. Wasabi uses [NBitcoin](https://github.com/MetacoSA/NBitcoin/) as its Bitcoin library, to which Wasabi developers are frequent contributors: [@lontivero](https://github.com/lontivero), [@nopara73](https://github.com/nopara73). Wasabi uses [Avalonia](https://github.com/AvaloniaUI/Avalonia/) library as its UI framework, where Wasabi developer [@danwalmsley](https://github.com/danwalmsley) is a maintainer.  
 Wasabi does not support and does not plan to support other currencies in the future.
 
+Now, let's look at what is going on under the hood for Wasabi, what tradeoffs it made, so we can later understand where it can be improved.
 
+After setting up Wasabi and generating a wallet, Wasabi welcomes the user with a load wallet screen. Unlike other wallets, Wasabi have a way to use multiple wallets. This is beneficial for privacy, since many users may prefer or used to achieve coin separation this way. However Wasabi provides a convenient in-wallet coin separation interface, too, more on that later. It is interesting to note, that since coin separation can be achieved in the wallet easily, initially we did not plan for such a wallet management system, our UX design choices naturally lead us down this road.
+![](https://i.imgur.com/139bjDH.png)
+
+Wasabi has a status bar that shows meta information about the state of the wallet. To better understand the architecture of the wallet it is helpful to go through them.
+
+The "Tor" label shows the status of the Tor daemon. Tor is an anonymity network, which Wasabi ships with by default and runs on the background. While user can opt to use its own Tor instance if it wishes to. All communication with Wasabi's backend server goes through Tor. Wasabi also utilizes multiple Tor identities, where applicable. For example registering coinjoin inputs and outputs happens through different Tor identities to avoid linking.
+
+![](https://i.imgur.com/054zvbY.png)
+
+Wasabi's backend server is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to in [BIP157](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki)-[BIP158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki). More on the difference soon.
+
+![](https://i.imgur.com/lSXrOpJ.png)
+
+After loading the wallet, the user can generate a receive address. Some important design choices were made here. First, Wasabi had to be a Segregated Witness only wallet, so registering unconfirmed coinjoin outputs into new coinjoin round is not to be vulnerable to malleability attacks. However the developers of Wasabi decided to make the wallet native segwit (bech32) only and to not support wrapped segwit. This way the backend server can leverage this and only generate filters regarding bech32 addresses. This makes Wasabi's filter size a few megabytes today, instead of >1GB (insert source here.) On the first glance this may be seen as hazardous to privacy, however Wasabi user utxos, can be identified as Wasabi utxos by the huge coinjoins, that only Wasabi do anyway, so no additional privacy loss happens there. In the future, as more and more wallets adopts bech32, Wasabi developers have to look at how to scale the performance of the wallet. Failing that Wasabi initial sync will slow down.
+
+![](https://i.imgur.com/aZb6TbZ.png)
+
+Wasabi also maintains connection to the Bitcoin P2P network. After Wasabi receives the filters from the backend, it can download the required blocks (there are false positives, too) one block at a peer. This does not currently happen over Tor, since the NBitcoin library we use to do the job does not support Tor yet. Sensitive information leak is already unlikely here, since the only information a node can get is that "one wallet may (false positives) have a transaction in one block someone fetched from me." Wasabi then stores the block in its entirety on disk, so it won't fetch again. A possible privacy leak can happen if wallet is being recovered, thus the work of Tor support here is desired in the future. Furthermore, storing blocks on the disk may take up too much space when the wallet is used extensively. There is room for improvement there, too.
+
+![](https://i.imgur.com/GBP8mSH.png)
+
+Wasabi receives incoming transactions from the nodes it is connected to. It is, while privacy preserving a more insecure way to handle this and should be improved in the future. Generally unconfirmed transactions are considered to be insecure regardless.
+
+![](https://i.imgur.com/mI4lQDt.png)
+
+Unlike in other Bitcoin wallets, to generate a Bitcoin address, a label is not optional, but required. This is, because Wasabi has an intra-wallet blockchain analysis tool built into it, which tries to cluster utxos (Wasabi calls them coins) and based on these clusters the user can make an educated decision which coins to merge and which to not later at spending, if it's necessary at all.
+
+![](https://i.imgur.com/dkdlOZN.png)
+
+Wasabi also has a History tab, like any other Bitcoin wallet.
+
+![](https://i.imgur.com/baDnln2.png)
+
+Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins. The label field of send tab is also cumpolsory, because of the above mentioned reasons.
+
+![](https://i.imgur.com/wUKTzE6.png)
+
+By clicking on the Max button, one can spend all secelted coins. Spending whole coins is beneficial to privacy. The Bitcoin fee rates are fetched from the backend server, the source of these fees are Bitcoin Core's estimatesmartfee's conservative feerates. Every fee query happens over Tor with new Tor identity. When clicking send, the wallet will broadcast the transaction to the Backend over Tor. This is sub-optimal, but because there's no Tor support for NBitcoin yet, broadcasting transaction P2P over the clearnet would be more dangerous. While, NBitcoin P2P Tor support should be an interest of future work, it is a smarter long-term objective to implement [Dandelion](https://github.com/gfanti/bips/blob/master/bip-dandelion.mediawiki) from a broadcasting point of view when the Bitcoin network adopted it.
+
+![](https://i.imgur.com/gQ1I7DZ.png)
+
+Coins in Wasabi have Privacy and History properties. The anonymity set is just an estimation at the moment, however by examining the mixes and other people's transactions we will be able to show accurate values. The History is a calculated clusters from the labels. Blockchain analysis may identify these clusters. For example, if the user joins together a "foo" labeled coins with a "bar" labeled coin at sending, then the change coin history will show "change of (foo), change of (bar)". From this users are able to make educated decisions which coins not to join together at all cost. Human input is invaluable.
+
+![](https://i.imgur.com/4vUiSWr.png)
+
+Wasabi also has a CoinJoin tab, its use is straightforward. The user can simply queue its coin for coinjoin and wait for others to join the mix.
+
+![](https://i.imgur.com/8wFd88C.png)
+
+If the user does not wish to proceed, it can dequeue its coins.
+
+![](https://i.imgur.com/lxmdxIG.png)
+
+After a mix successfully executed, the resulting CoinJoin transaction will look like the following: https://www.smartbit.com.au/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2
+
+![](https://i.imgur.com/rcVcPOM.png)
 
 ## II. Stability, Performance, UX, Code Quality
 https://github.com/zkSNACKs/WalletWasabi/issues/407
