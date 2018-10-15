@@ -7,15 +7,19 @@ Wasabi Wallet is the state of the art privacy focused Bitcoin wallet that is bas
 ## Table Of Contents
 
 I. [Introduction](#i-introduction)  
-II. [Stability, Performance, UX, Code Quality](#ii-chaumian-coinjoin)  
+II. [Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality)  
+III. [Education](#iii-education)  
+IV. [Bitcoin Privacy Improvements](#ii-chaumian-coinjoin)  
 &nbsp;&nbsp;&nbsp;A. [Simplified Protocol](#a-simplified-protocol)  
-III. [Bitcoin Privacy Improvements](#ii-chaumian-coinjoin)  
-&nbsp;&nbsp;&nbsp;A. [Simplified Protocol](#a-simplified-protocol)  
-IV. [General Wallet Features](#iii-wallet-privacy-framework)  
+V. [General Wallet Features](#iii-wallet-privacy-framework)  
 &nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
-V. [Accessibility](#iii-wallet-privacy-framework)  
+VI. [Accessibility](#iii-wallet-privacy-framework)  
 &nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
-VI. [Extending the Scope of Privacy](#iii-wallet-privacy-framework)  
+VII. [Extending the Scope of Privacy](#iii-wallet-privacy-framework)  
 &nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
 
 ## I. Introduction
+
+## II. Stability, Performance, UX, Code Quality
+
+## III. Education
