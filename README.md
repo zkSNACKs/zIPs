@@ -10,15 +10,10 @@ I. [Introduction](#i-introduction)
 II. [Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality)  
 III. [Education](#iii-education)  
 IV. [Bitcoin Privacy Improvements](#iv-bitcoin-privacy-improvements)  
-&nbsp;&nbsp;&nbsp;A. [Simplified Protocol](#a-simplified-protocol)  
 V. [General Wallet Features](#v-general-wallet-features)  
-&nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
 VI. [Accessibility](#vi-accessibility)  
-&nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
 VII. [Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy)  
-&nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
 VIII. [Soul of the Wallet](#viii-soul-of-the-wallet)  
-&nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
 
 ## I. Introduction
 
