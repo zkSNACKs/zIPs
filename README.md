@@ -22,11 +22,29 @@ VIII. [Soul of the Wallet](#viii-soul-of-the-wallet)
 ## III. Education
 
 ## IV. Bitcoin Privacy Improvements
+https://github.com/zkSNACKs/Meta/issues/18
+https://github.com/zkSNACKs/Meta/issues/17
+https://github.com/zkSNACKs/Meta/issues/10
+https://github.com/zkSNACKs/Meta/issues/11
+https://github.com/zkSNACKs/Meta/issues/8
+https://github.com/zkSNACKs/Meta/issues/6
+https://github.com/zkSNACKs/Meta/issues/5
+https://github.com/zkSNACKs/Meta/issues/4
+https://github.com/zkSNACKs/Meta/issues/3
 
 ## V. General Wallet Features
+https://github.com/zkSNACKs/Meta/issues/15
+https://github.com/zkSNACKs/Meta/issues/12
+https://github.com/zkSNACKs/Meta/issues/2
 
 ## VI. Accessibility
+https://github.com/zkSNACKs/Meta/issues/9
+https://github.com/zkSNACKs/Meta/issues/20
+https://github.com/zkSNACKs/Meta/issues/7
 
 ## VII. Extending the Scope of Privacy
+https://github.com/zkSNACKs/Meta/issues/16
+https://github.com/zkSNACKs/Meta/issues/13
+https://github.com/zkSNACKs/Meta/issues/14
 
 ## VIII. Soul of the Wallet
