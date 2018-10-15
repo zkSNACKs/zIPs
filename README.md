@@ -30,6 +30,8 @@ VIII. [Soul of the Wallet](#viii-soul-of-the-wallet)
 
 ## V. General Wallet Features
 
+## VI. Accessibility
+
 ## VII. Extending the Scope of Privacy
 
 ## VIII. Soul of the Wallet
