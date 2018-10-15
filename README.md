@@ -9,13 +9,15 @@ Wasabi Wallet is the state of the art privacy focused Bitcoin wallet that is bas
 I. [Introduction](#i-introduction)  
 II. [Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality)  
 III. [Education](#iii-education)  
-IV. [Bitcoin Privacy Improvements](#ii-chaumian-coinjoin)  
+IV. [Bitcoin Privacy Improvements](#iv-bitcoin-privacy-improvements)  
 &nbsp;&nbsp;&nbsp;A. [Simplified Protocol](#a-simplified-protocol)  
-V. [General Wallet Features](#iii-wallet-privacy-framework)  
+V. [General Wallet Features](#v-general-wallet-features)  
 &nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
-VI. [Accessibility](#iii-wallet-privacy-framework)  
+VI. [Accessibility](#vi-accessibility)  
 &nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
-VII. [Extending the Scope of Privacy](#iii-wallet-privacy-framework)  
+VII. [Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy)  
+&nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
+VIII. [Soul of the Wallet](#viii-soul-of-the-wallet)  
 &nbsp;&nbsp;&nbsp;A. [Pre-Mix Wallet](#a-pre-mix-wallet)  
 
 ## I. Introduction
@@ -23,3 +25,11 @@ VII. [Extending the Scope of Privacy](#iii-wallet-privacy-framework)
 ## II. Stability, Performance, UX, Code Quality
 
 ## III. Education
+
+## IV. Bitcoin Privacy Improvements
+
+## V. General Wallet Features
+
+## VII. Extending the Scope of Privacy
+
+## VIII. Soul of the Wallet
