@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Wasabi Wallet is the state of the art privacy focused Bitcoin wallet that is based on the [ZeroLink Wallet Fungibility Framework](https://github.com/nopara73/ZeroLink/). While mathematically proven privacy can be achieved today with it, the cost, convenience, intuitiveness and strength of this privacy can be greatly improved. Wasabi also needs to improve its accessibility and its general Bitcoin wallet features. Furtheremore Wasabi should look into ways of extending the scope of its privacy protection to other, not closely Bitcoin related fields, like end to end encrypted messaging. Finally, Wasabi also needs to concentrate on its stability, performance, UX and code quality. This document aims to outline a starting plan to progress towards those objectives.
+Wasabi Wallet is the state of the art Bitcoin privacy wallet that is based on the [ZeroLink Wallet Fungibility Framework](https://github.com/nopara73/ZeroLink/). While statistical privacy can be achieved today with it, the cost, convenience, intuitiveness and strength of this privacy can be greatly improved. Wasabi also needs to improve its accessibility and its general Bitcoin wallet features. Furtheremore Wasabi should look into ways of extending the scope of its privacy protection to other, not closely Bitcoin related fields, like end to end encrypted messaging. Finally, Wasabi also needs to concentrate on its stability, performance, UX and code quality. This document aims to outline a starting plan to progress towards those objectives.
 
 ## Table Of Contents
 
@@ -13,9 +13,22 @@ IV. [Bitcoin Privacy Improvements](#iv-bitcoin-privacy-improvements)
 V. [General Wallet Features](#v-general-wallet-features)  
 VI. [Accessibility](#vi-accessibility)  
 VII. [Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy)  
-VIII. [Soul of the Wallet](#viii-soul-of-the-wallet)  
+VIII. [Unique Wallet Features](#viii-unique-wallet-features)  
 
 ## I. Introduction
+
+Wasabi's main focuses are Bitcoin and privacy, thus section IV. [Bitcoin Privacy Improvements](#iv-bitcoin-privacy-improvements)  . However a a loss of privacy in fields, those are traditionally considered to be out of the scope of a Bitcoin wallet, like sharing addresses through unsecure chat clients or checking transactions in a block explorer through the clearnet also poses privacy threats, thus Wasabi cannot consider them out of their scope, thus section VII. [Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy).  
+In the paper [Anonymity Loves Company: Usability and the Network Effect](https://www.freehaven.net/anonbib/cache/usability:weis2006.pdf) the authors note that: 
+
+> We show that in anonymizing networks, even if you were smart enough and had enough time to use every system perfectly, you would nevertheless be right to choose your system based in part on its usability for other users.
+
+Therefore Wasabi should also pay attention to fields those help to increase the number of Wasabi users, with that bringing greater privacy for everyone, thus sections III. [Education](#iii-education) and VI. [Accessibility](#vi-accessibility).  
+
+Furtheremore Wasabi is a software, therefore it must not neglect general software quality issues, thus section II. [Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality). The better software Wasabi is, the more users it will retain.
+
+Wasabi is also a Bitcoin wallet, therefore it must also improve general Bitcoin wallet related features, thus section V. [General Wallet Features](#v-general-wallet-features).
+
+And finally, there are development opportunities, where the developers of Wasabi recognize they could esily add some unique wallet features, no other wallets do, like in-wallet multi-wallet support, thus section VIII. [Unique Wallet Features](#viii-unique-wallet-features).
 
 ## II. Stability, Performance, UX, Code Quality
 https://github.com/zkSNACKs/WalletWasabi/issues/407
@@ -132,7 +145,7 @@ https://github.com/zkSNACKs/Meta/issues/16
 https://github.com/zkSNACKs/Meta/issues/13
 https://github.com/zkSNACKs/Meta/issues/14
 
-## VIII. Soul of the Wallet
+## VIII. Unique Wallet Features
 https://github.com/zkSNACKs/WalletWasabi/issues/496
 https://github.com/zkSNACKs/WalletWasabi/pull/697
 https://github.com/zkSNACKs/WalletWasabi/issues/608
