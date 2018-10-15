@@ -20,6 +20,20 @@ VIII. [Soul of the Wallet](#viii-soul-of-the-wallet)
 ## II. Stability, Performance, UX, Code Quality
 
 ## III. Education
+https://github.com/nopara73/ZeroLink/issues/11
+https://github.com/nopara73/ZeroLink/issues/43
+https://github.com/nopara73/ZeroLink/issues/40
+https://github.com/nopara73/ZeroLink/issues/44
+https://github.com/nopara73/ZeroLink/issues/46
+https://github.com/nopara73/ZeroLink/issues/48
+https://github.com/nopara73/ZeroLink/issues/49
+https://github.com/nopara73/ZeroLink/issues/54
+https://github.com/nopara73/ZeroLink/issues/55
+https://github.com/nopara73/ZeroLink/issues/66
+https://github.com/nopara73/ZeroLink/issues/59
+https://github.com/nopara73/ZeroLink/issues/69
+https://github.com/nopara73/ZeroLink/issues/70
+https://github.com/nopara73/ZeroLink/issues/71
 
 ## IV. Bitcoin Privacy Improvements
 https://github.com/zkSNACKs/Meta/issues/18
@@ -31,6 +45,18 @@ https://github.com/zkSNACKs/Meta/issues/6
 https://github.com/zkSNACKs/Meta/issues/5
 https://github.com/zkSNACKs/Meta/issues/4
 https://github.com/zkSNACKs/Meta/issues/3
+https://github.com/nopara73/ZeroLink/issues/37
+https://github.com/nopara73/ZeroLink/issues/41
+https://github.com/nopara73/ZeroLink/issues/56
+https://github.com/nopara73/ZeroLink/issues/58
+https://github.com/nopara73/ZeroLink/issues/32
+https://github.com/nopara73/ZeroLink/issues/60
+https://github.com/nopara73/ZeroLink/issues/64
+https://github.com/nopara73/ZeroLink/issues/65
+https://github.com/nopara73/ZeroLink/issues/42
+https://github.com/nopara73/ZeroLink/issues/6
+https://github.com/nopara73/ZeroLink/issues/75
+https://github.com/nopara73/ZeroLink/issues/74
 
 ## V. General Wallet Features
 https://github.com/zkSNACKs/Meta/issues/15
