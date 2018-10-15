@@ -160,20 +160,8 @@ https://github.com/zkSNACKs/WalletWasabi/issues/730,
 https://github.com/zkSNACKs/WalletWasabi/issues/718
 
 ## III. Education
-https://github.com/nopara73/ZeroLink/issues/11
-https://github.com/nopara73/ZeroLink/issues/43
-https://github.com/nopara73/ZeroLink/issues/40
-https://github.com/nopara73/ZeroLink/issues/44
-https://github.com/nopara73/ZeroLink/issues/46
-https://github.com/nopara73/ZeroLink/issues/48
-https://github.com/nopara73/ZeroLink/issues/49
-https://github.com/nopara73/ZeroLink/issues/54
-https://github.com/nopara73/ZeroLink/issues/55
-https://github.com/nopara73/ZeroLink/issues/66
-https://github.com/nopara73/ZeroLink/issues/59
-https://github.com/nopara73/ZeroLink/issues/69
-https://github.com/nopara73/ZeroLink/issues/70
-https://github.com/nopara73/ZeroLink/issues/71
+
+Through education, Wasabi can obtain new users. The more Wasabi users there are, the better their privacy is. Advancing this issue takes various forms, which this document will not cover.
 
 ## IV. Bitcoin Privacy Improvements
 https://github.com/zkSNACKs/Meta/issues/18
