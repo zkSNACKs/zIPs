@@ -32,7 +32,7 @@ And finally, there are development opportunities, where the developers of Wasabi
 
 Note that, the developers of Wasabi are currently occupied by section II. [Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality). This enjoys the highest priority. New issues will constantly come up as new users try to use the software. At this point it is unclear if Wasabi will ever have the resources to tackle other sections in this document.
 
-### Understanding Wasabi Wallet
+### Wasabi Wallet Under the Hood
 
 Wasabi is an [open-source](https://github.com/zkSNACKs/WalletWasabi/), desktop Bitcoin wallet, working on Windows, Linux and OSX, written in [.NET Core](https://en.wikipedia.org/wiki/.NET_Core) (C#), which is cross platform and open source .NET. Wasabi uses [NBitcoin](https://github.com/MetacoSA/NBitcoin/) as its Bitcoin library, to which Wasabi developers are frequent contributors: [@lontivero](https://github.com/lontivero), [@nopara73](https://github.com/nopara73). Wasabi uses [Avalonia](https://github.com/AvaloniaUI/Avalonia/) library as its UI framework, where Wasabi developer [@danwalmsley](https://github.com/danwalmsley) is a maintainer.  
 Wasabi does not support and does not plan to support other currencies in the future.
@@ -95,6 +95,12 @@ If the user does not wish to proceed, it can dequeue its coins.
 After a mix successfully executed, the resulting CoinJoin transaction will look like the following: https://www.smartbit.com.au/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2
 
 ![](https://i.imgur.com/rcVcPOM.png)
+
+Wasabi also has a Tor website, where one can see real time statistics about the mixes: http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/
+
+![](https://i.imgur.com/4vE1IiD.png)
+
+The above number means, Wasabi's coinjoins created >102BTC outputs with equal value.
 
 ## II. Stability, Performance, UX, Code Quality
 https://github.com/zkSNACKs/WalletWasabi/issues/407
