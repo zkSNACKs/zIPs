@@ -32,7 +32,10 @@ And finally, there are development opportunities, where the developers of Wasabi
 
 Note that, the developers of Wasabi are currently occupied by section II. [Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality). This enjoys the highest priority. New issues will constantly come up as new users try to use the software. At this point it is unclear if Wasabi will ever have the resources to tackle other sections in this document.
 
-### The Structure of Wasabi Wallet
+### Understanding Wasabi Wallet
+
+Wasabi is an [open-source](https://github.com/zkSNACKs/WalletWasabi/), desktop Bitcoin wallet, working on Windows, Linux and OSX, written in [.NET Core](https://en.wikipedia.org/wiki/.NET_Core) (C#), which is cross platform and open source .NET. Wasabi uses [NBitcoin](https://github.com/MetacoSA/NBitcoin/) as its Bitcoin library, to which Wasabi developers are frequent contributors: [@lontivero](https://github.com/lontivero), [@nopara73](https://github.com/nopara73). Wasabi uses [Avalonia](https://github.com/AvaloniaUI/Avalonia/) library as its UI framework, where Wasabi developer [@danwalmsley](https://github.com/danwalmsley) is a maintainer.  
+Wasabi does not support and does not plan to support other currencies in the future.
 
 
 
