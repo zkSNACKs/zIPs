@@ -164,7 +164,7 @@ https://github.com/zkSNACKs/WalletWasabi/issues/718
 
 ## III. Education
 
-While education, content creation and marketing are things those havae little place in a technical document, it is still important part of the big picture. Through education Wasabi can obtain new users. The more Wasabi users there are, the better their privacy is. Advancing this issue can take various, often opportunistic forms.
+While education, content creation and marketing are things those have little place in a technical document, it is still important part of the big picture. Through education Wasabi can obtain new users. The more Wasabi users there are, the better their privacy is. Advancing this issue can take various, often opportunistic forms.
 
 ## IV. Bitcoin Privacy Improvements
 
