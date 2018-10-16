@@ -1,4 +1,4 @@
-# A Technical Overview of Wasabi, Future Ideas, Plans and Strategy
+# A Technical Overview of Wasabi Wallet, Future Ideas, Plans and Strategy
 
 ## Abstract
 
@@ -14,6 +14,7 @@ V. [General Wallet Features](#v-general-wallet-features)
 VI. [Accessibility](#vi-accessibility)  
 VII. [Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy)  
 VIII. [Unique Wallet Features](#viii-unique-wallet-features)  
+IX. [Conclusion](#iv-conclusion)  
 
 ## I. Introduction
 
@@ -271,3 +272,7 @@ Unique wallet features is a set of unorganied ideas those are not closely relate
 - Clipboard Hijacker Malware Defense: https://github.com/zkSNACKs/WalletWasabi/issues/496, https://github.com/zkSNACKs/WalletWasabi/pull/697
 - Password Masking Fun: https://github.com/zkSNACKs/WalletWasabi/issues/439
 - Magic Button: https://github.com/zkSNACKs/WalletWasabi/issues/608
+
+## IX. Conclusion
+
+In this document we gave a comprehensive overview of Wasabi Wallet. Unlike the creators of many other products we deliberately decided to honestly and extensively describe and discuss Wasabi's shortcoming, tradeoffs and design decisions. We outlined our ideas and our future technical plans and helped the reader to get familiar with our thinking process. This document could be analysed and used by anyone who would like to achieve the strongest privacy in Bitcoin today without falling prey to misinformation that is rampant in the space. Of course, it is unavoidable that the reader to be still suspectible to the authors unconscious biases and we apologize for it in advance.
