@@ -17,20 +17,20 @@ VIII. [Unique Wallet Features](#viii-unique-wallet-features)
 
 ## I. Introduction
 
-Wasabi's main focuses are Bitcoin and privacy, thus section IV. [Bitcoin Privacy Improvements](#iv-bitcoin-privacy-improvements)  . However a loss of privacy in fields that are traditionally considered to be out of the scope of a Bitcoin wallet like sharing addresses through unsecure chat clients or checking transactions in a block explorer through the clearnet also poses privacy threats, thus Wasabi cannot consider them out of their scope, thus section VII. [Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy).  
+Wasabi focuses on Bitcoin and privacy, thus section [IV. Bitcoin Privacy Improvements](#iv-bitcoin-privacy-improvements)  . However a loss of privacy in fields that are traditionally considered to be out of the scope of a Bitcoin wallet like sharing addresses through unsecure chat clients or checking transactions in a block explorer through the clearnet also poses privacy threats, thus Wasabi cannot consider them out of their scope, thus section [VII. Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy).  
 In the paper [Anonymity Loves Company: Usability and the Network Effect](https://www.freehaven.net/anonbib/cache/usability:weis2006.pdf) the authors note that: 
 
 > We show that in anonymizing networks, even if you were smart enough and had enough time to use every system perfectly, you would nevertheless be right to choose your system based in part on its usability for other users.
 
-Therefore Wasabi should also pay attention to fields that help to increase the number of Wasabi users, with that bringing greater privacy for everyone, thus sections III. [Education](#iii-education) and VI. [Accessibility](#vi-accessibility).  
+Therefore Wasabi should also pay attention to fields that help to increase the number of Wasabi users, with that bringing greater privacy for everyone, thus sections [III. Education](#iii-education) and [VI. Accessibility](#vi-accessibility).  
 
-Furthermore Wasabi is a software, therefore it must not neglect general software quality issues, thus section II. [Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality). The better software Wasabi is, the more users it will retain.
+Furthermore Wasabi is a software, therefore it must not neglect general software quality issues, thus section [II. Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality). The better software Wasabi is, the more users it will retain.
 
-Wasabi is also a Bitcoin wallet, therefore it must improve general Bitcoin wallet related features as well, thus section V. [General Wallet Features](#v-general-wallet-features).
+Wasabi is also a Bitcoin wallet, therefore it must improve general Bitcoin wallet related features as well, thus section [V. General Wallet Features](#v-general-wallet-features).
 
-Finally, there are development opportunities, where the developers of Wasabi recognize that they could easily add some unique wallet features that no other wallets do, like in-wallet multi-wallet support, thus section VIII. [Unique Wallet Features](#viii-unique-wallet-features).
+Finally, there are development opportunities, where the developers of Wasabi recognize that they could easily add some unique wallet features that no other wallets do, like in-wallet multi-wallet support, thus section [VIII. Unique Wallet Features](#viii-unique-wallet-features).
 
-Note that the developers of Wasabi are currently occupied by section II. [Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality). This enjoys the highest priority. New issues will constantly come up as new users try to use the software. At this point it is unclear if Wasabi will ever have the resources to tackle other sections in this document.
+Note that the developers of Wasabi are currently occupied by section [II. Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality). This enjoys the highest priority. New issues will constantly come up as new users try to use the software. At this point it is unclear if Wasabi will ever have the resources to tackle other sections in this document.
 
 ### Wasabi Wallet Under the Hood
 
