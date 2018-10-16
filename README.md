@@ -106,7 +106,7 @@ The above number means, Wasabi's coinjoins created >102BTC outputs with equal va
 ## II. Stability, Performance, UX, Code Quality
 
 As it was discussed above, the main priority of Wasabi developers is currently the stability, performance, code quality and user experience of Wasabi. Great care must be taken here because the more users a network reliant privacy software has, the better privacy it offers. The more users there are, the better the software is. In Wasabi it's the most apparent during CoinJoins. The more users participating in the round, the higher anonymity set a CoinJoin achieves and the more frequent the rounds are. In our calculations if Wasabi would acquire the volume of the most popular Bitcoin mixers, Wasabi could provide a 100 anonymity set round with the denomination of 0.1BTC every 3 to 5 minutes.  
-This section consists of many boring micro issues, waiting to be solved one by one. In this document these won't be extensively discussed. Related issues as of 2018 October:
+This section consists of many small issues, waiting to be solved one by one. Since solving these issues are often more effective than discussing them, these won't be extensively discussed in this document. Related issues as of 2018 October:
 
 https://github.com/zkSNACKs/WalletWasabi/issues/407, 
 https://github.com/zkSNACKs/WalletWasabi/issues/386, 
