@@ -231,13 +231,15 @@ At this point it is too early to start implementing leveraging LN in a privacy o
 - Open Lightning Channels with ZeroLink in Wasabi - https://github.com/zkSNACKs/Meta/issues/3, https://github.com/nopara73/ZeroLink/issues/58
 
 ## V. General Wallet Features
-https://github.com/zkSNACKs/Meta/issues/15
-https://github.com/zkSNACKs/Meta/issues/12
-https://github.com/zkSNACKs/Meta/issues/2
-https://github.com/zkSNACKs/WalletWasabi/issues/486
-https://github.com/zkSNACKs/WalletWasabi/issues/727
-https://github.com/zkSNACKs/WalletWasabi/issues/731
-https://github.com/zkSNACKs/WalletWasabi/issues/732
+
+Wasabi today has all the features a Bitcoin wallet needs, those are not related to privacy. There may be other features those are useful to have.
+- Pay to Many: https://github.com/zkSNACKs/WalletWasabi/issues/733
+- Avanced RBF (ethical concerns here): https://github.com/zkSNACKs/Meta/issues/15
+- Lightning Network integration eventually will be unavoidable for any Bitcoin wallet if they want to stay in business, since blockchains don't scale: https://github.com/zkSNACKs/Meta/issues/2
+- Sweep Private Key: https://github.com/zkSNACKs/WalletWasabi/issues/486
+- Paper Wallet Generation: https://github.com/zkSNACKs/WalletWasabi/issues/727
+- Read QR Code (currently it only shows it): https://github.com/zkSNACKs/WalletWasabi/issues/731
+- Bitcoin URL Support: https://github.com/zkSNACKs/WalletWasabi/issues/732
 
 ## VI. Accessibility
 
@@ -251,6 +253,8 @@ In theory, Wasabi could support smart phones (Android, iOS). In practive the tec
 
 The question of a web-wallet is also something to think about. However, it may not be possible at all to build a network analysis resistent web wallet, nor to build a secure web wallet in general. Nevertheless this question deserves more thought. https://github.com/zkSNACKs/Meta/issues/20  
 
+Another way to improve the software is to let developers play with it through a daemon (RPC?) process. https://github.com/zkSNACKs/Meta/issues/12
+
 ## VII. Extending the Scope of Privacy
 https://github.com/zkSNACKs/Meta/issues/16
 https://github.com/zkSNACKs/Meta/issues/13
@@ -258,7 +262,8 @@ https://github.com/zkSNACKs/Meta/issues/14
 
 ## VIII. Unique Wallet Features
 
-Unique wallet features is a set of unorganied ideas those are not closely related to privacy.
-- Clipboard Hijacker Malware Defense (https://github.com/zkSNACKs/WalletWasabi/issues/496, https://github.com/zkSNACKs/WalletWasabi/pull/697)
-- Password Masking Fun (https://github.com/zkSNACKs/WalletWasabi/issues/439)
-- Magic Button (https://github.com/zkSNACKs/WalletWasabi/issues/608)
+Unique wallet features is a set of unorganied ideas those are not closely related to privacy. These are by no means necessary for Wasabi, but what fun there is in programming if the developers are not allowed to play with their creativity once in a while?
+
+- Clipboard Hijacker Malware Defense: https://github.com/zkSNACKs/WalletWasabi/issues/496, https://github.com/zkSNACKs/WalletWasabi/pull/697
+- Password Masking Fun: https://github.com/zkSNACKs/WalletWasabi/issues/439
+- Magic Button: https://github.com/zkSNACKs/WalletWasabi/issues/608
