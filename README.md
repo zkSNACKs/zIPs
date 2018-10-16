@@ -18,7 +18,7 @@ IX. [Conclusion](#ix-conclusion)
 
 ## I. Introduction
 
-Wasabi's main focuses are Bitcoin and privacy, thus section [IV. Bitcoin Privacy Improvements](#iv-bitcoin-privacy-improvements)  . However a loss of privacy in fields those are traditionally considered to be out of the scope of a Bitcoin wallet, like sharing addresses through unsecure chat clients or checking transactions in a block explorer through the clearnet also pose privacy threats, ergo Wasabi cannot consider them entirely out of their scope, thus section [VII. Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy).  
+Wasabi's main focuses are Bitcoin and privacy, thus section [IV. Bitcoin Privacy Improvements](#iv-bitcoin-privacy-improvements)  . However a loss of privacy in fields those are traditionally considered to be out of the scope of a Bitcoin wallet, like sharing addresses through unsecure chat clients or checking transactions in a block explorer through the clearnet also pose privacy threats, ergo Wasabi cannot consider them entirely out of its scope, thus section [VII. Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy).  
 In the paper [Anonymity Loves Company: Usability and the Network Effect](https://www.freehaven.net/anonbib/cache/usability:weis2006.pdf) the authors note: 
 
 > We show that in anonymizing networks, even if you were smart enough and had enough time to use every system perfectly, you would nevertheless be right to choose your system based in part on its usability for other users.
