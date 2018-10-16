@@ -1,4 +1,4 @@
-# Technical Plans
+# A Technical Overview of Wasabi, Future Ideas and Strategy
 
 ## Abstract
 
