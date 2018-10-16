@@ -176,9 +176,37 @@ One way to mitigate this is with Wasabi's current compulsory coin control featur
 Another way is Wasabi's intra-wallet clustering system, where the users must use required labels. This helps the user to make an educated decision, if it must join inputs together at send.  
 Another thing that the author of ZeroLink did not anticipate was the frequent remixing of already mixed coins. In every round more than half of the inputs are remixes, which not only results in perfect mixes for those inputs, but it also results in an anonymity set growth somewhere between the scale of addition to multiplication, instead of simple addition, as the ZeroLink paper anticipated. If the anonymity set gain is closer to addition or multiplication depends on how other users behave. Right now, Wasabi simply counts worst case scenario: so it shows the user addition. As of today, mixes are so interconnected, not even extensive input joining can deanonymize the users. However, this is happening in a low-Bitcoin fee environment, so this is not to be taken granted in the future. Additional measures are necessary.
 
-The ideas described in this section are just ideas. Many of them are not compatible with each other, not proven or require further research.
+The ideas described in this section are just ideas. Many of them are not compatible with each other, not proven or require further research.  
+
+It is also worth pointing out if [Confidential Transactions](https://people.xiph.org/~greg/confidential_values.txt) would somehow made its way into Bitcoin, there wouldn't be a need for most of the improvements described in this section.
+
+### Mixing Improvements
+
+#### Unequal Input Mixing
+
+One of the most exciting advancements could be achieved improving the mixes itself. The intution behind Unequal Input Mixing, (https://github.com/zkSNACKs/Meta/issues/4, https://github.com/nopara73/ZeroLink/issues/74) that could replace today's fixed denomination mixing, is clear, and its benefits are huge. However this requires further research.
+
+Currently identified advantages of unequal input mixing, compared to the fixed denomination mixing. I will use the following notation here:  
+
+```
+UIM - Unequal Input Mixing
+FDM - Fixed Denomination Mixing
+```
+
+1. UIM's main goal is to optimize the cost/anonymity set.
+2. In FDM those who don't have enough money to mix, will not be able to mix. In UIM it is not an issue anymore.
+3. In FDM peers often join together their utxos in order to reach the denomination. This exposes common ownership. There is no such an issue in UIM. Because of this, joining utxos together after the mix is not as big of a deal anymore.
+4. In UIM mixing can be done over and over again until the desired anonymity set is reached. In FDM mixing cannot be repeated, because the mixed output of the mix will never reach the sufficient input level of the next mix (due to network fees.) In FDM if the user would decide to participate with an already mixed coin, then he would have to add another input in order to suffice the mix requirements, which exposes common ownership.
+5. People with lot of money would got matched together and would not have to wait weeks/months to mix everything out.
+
+#### Mix to Self vs Mixing to Others
+
+Mix to Others (https://github.com/zkSNACKs/Meta/issues/6, https://github.com/nopara73/ZeroLink/issues/75) also have great potential, since it could completely replace Simple Send altogether. It is however dubious if there will ever be enough liquidity for this.
 
 ### Simple Send Improvements
+
+Improving simple send by current Bitcoin anonymity techniques is also an interesting topic. These do not even have to distrupt the current user workflow, they can mostly "just happen" in the background.
+
 - JoinMarket: https://github.com/zkSNACKs/Meta/issues/5
 - Friend CoinJoin Network:  https://github.com/zkSNACKs/Meta/issues/17
 - Merge Avoidance with BIP47 Payment Codes: https://github.com/zkSNACKs/Meta/issues/10
@@ -186,18 +214,19 @@ The ideas described in this section are just ideas. Many of them are not compati
 - Pay to EndPoint: https://github.com/zkSNACKs/Meta/issues/18, https://github.com/zkSNACKs/Meta/issues/18
 
 ### Coin Control and Privacy Feedback Improvements
+
+Improving the user friendliness and accuracy of coin awareness and what happens on the blockchain can be also beneficial.
+
 - New Type of Bitcoin UI: https://github.com/zkSNACKs/Meta/issues/8
 - Input Joining Avoidance Strategy by Killing Kittens: https://github.com/nopara73/ZeroLink/issues/65
 - Improve History of a Coin: https://github.com/zkSNACKs/WalletWasabi/issues/612
 - Accurate Anonymity Set Calculation: https://github.com/zkSNACKs/WalletWasabi/issues/728
 - Interactive Privacy Suggestions when Spending - https://github.com/zkSNACKs/WalletWasabi/issues/729
 
-### Mixing Improvements
-- Mix to Others: https://github.com/zkSNACKs/Meta/issues/6, https://github.com/nopara73/ZeroLink/issues/75
-- Mixing Unequal Inputs: https://github.com/zkSNACKs/Meta/issues/4, https://github.com/nopara73/ZeroLink/issues/74
-- Dynamic Mix Denomination: https://github.com/nopara73/ZeroLink/issues/41
-
 ### Lightning Network Leverage
+
+At this point it is too early to start implementing leveraging LN in a privacy oriented wallet, in the future if Bitcoin is successful, there will be a need to think about these questions, since [blockchains don't scale.](https://medium.com/@nopara73/how-to-scale-a-blockchain-a997dcb12775)
+
 - CoinJoinXT
 - Open Lightning Channels with ZeroLink in Wasabi - https://github.com/zkSNACKs/Meta/issues/3, https://github.com/nopara73/ZeroLink/issues/58
 
