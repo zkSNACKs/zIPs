@@ -257,7 +257,8 @@ https://github.com/zkSNACKs/Meta/issues/13
 https://github.com/zkSNACKs/Meta/issues/14
 
 ## VIII. Unique Wallet Features
-https://github.com/zkSNACKs/WalletWasabi/issues/496
-https://github.com/zkSNACKs/WalletWasabi/pull/697
-https://github.com/zkSNACKs/WalletWasabi/issues/608
-https://github.com/zkSNACKs/WalletWasabi/issues/439
+
+Unique wallet features is a set of unorganied ideas those are not closely related to privacy.
+- Clipboard Hijacker Malware Defense (https://github.com/zkSNACKs/WalletWasabi/issues/496, https://github.com/zkSNACKs/WalletWasabi/pull/697)
+- Password Masking Fun (https://github.com/zkSNACKs/WalletWasabi/issues/439)
+- Magic Button (https://github.com/zkSNACKs/WalletWasabi/issues/608)
