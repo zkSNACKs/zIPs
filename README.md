@@ -14,7 +14,7 @@ V. [General Wallet Features](#v-general-wallet-features)
 VI. [Accessibility](#vi-accessibility)  
 VII. [Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy)  
 VIII. [Unique Wallet Features](#viii-unique-wallet-features)  
-IX. [Conclusion](#iv-conclusion)  
+IX. [Conclusion](#ix-conclusion)  
 
 ## I. Introduction
 
