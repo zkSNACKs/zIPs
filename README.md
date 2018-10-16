@@ -166,30 +166,40 @@ https://github.com/zkSNACKs/WalletWasabi/issues/718
 While education, content creation and marketing are things those havae little place in a technical document, it is still important part of the big picture. Through education Wasabi can obtain new users. The more Wasabi users there are, the better their privacy is. Advancing this issue can take various, often opportunistic forms.
 
 ## IV. Bitcoin Privacy Improvements
-https://github.com/zkSNACKs/Meta/issues/18
-https://github.com/zkSNACKs/Meta/issues/17
-https://github.com/zkSNACKs/Meta/issues/10
-https://github.com/zkSNACKs/Meta/issues/11
-https://github.com/zkSNACKs/Meta/issues/8
-https://github.com/zkSNACKs/Meta/issues/6
-https://github.com/zkSNACKs/Meta/issues/5
-https://github.com/zkSNACKs/Meta/issues/4
-https://github.com/zkSNACKs/Meta/issues/3
-https://github.com/nopara73/ZeroLink/issues/37
-https://github.com/nopara73/ZeroLink/issues/41
-https://github.com/nopara73/ZeroLink/issues/56
-https://github.com/nopara73/ZeroLink/issues/58
-https://github.com/nopara73/ZeroLink/issues/32
-https://github.com/nopara73/ZeroLink/issues/60
-https://github.com/nopara73/ZeroLink/issues/64
-https://github.com/nopara73/ZeroLink/issues/65
-https://github.com/nopara73/ZeroLink/issues/42
-https://github.com/nopara73/ZeroLink/issues/6
-https://github.com/nopara73/ZeroLink/issues/75
-https://github.com/nopara73/ZeroLink/issues/74
-https://github.com/zkSNACKs/WalletWasabi/issues/612
-https://github.com/zkSNACKs/WalletWasabi/issues/728
-https://github.com/zkSNACKs/WalletWasabi/issues/729
+
+On the Blockchain level currently Wasabi helps its users to achieve the desired privacy in three main ways: mixing, coin control and intra-wallet clustering.  
+
+Coin mixing happens through Chaumian CoinJoin, as described in the [ZeroLink](https://github.com/nopara73/ZeroLink/) protocol. In a nutshell Wasabi users register their transaction inputs and desired outputs to a coordinator and the cooperation of these users result in a big coinjoin transaction. Rhe coordinator cannot steal from, nor deanonymize the users. However, ZeroLink says, in order to statistically avoid post-mix deanonymization, coins must not be joined together. This, however in practice is unfeasible.  
+Thus various strategies are needed to mitigate this deanonymization risk.  
+
+One way to mitigate this is with Wasabi's current compulsory coin control feature. It helps the users to not join coins together and spend whole coins, but it does not forces them, so it is not perfect.  
+Another way is Wasabi's intra-wallet clustering system, where the users must use required labels. This helps the user to make an educated decision, if it must join inputs together at send.  
+Another thing that the author of ZeroLink did not anticipate was the frequent remixing of already mixed coins. In every round more than half of the inputs are remixes, which not only results in perfect mixes for those inputs, but it also results in an anonymity set growth somewhere between the scale of addition to multiplication, instead of simple addition, as the ZeroLink paper anticipated. If the anonymity set gain is closer to addition or multiplication depends on how other users behave. Right now, Wasabi simply counts worst case scenario: so it shows the user addition. As of today, mixes are so interconnected, not even extensive input joining can deanonymize the users. However, this is happening in a low-Bitcoin fee environment, so this is not to be taken granted in the future. Additional measures are necessary.
+
+The ideas described in this section are just ideas. Many of them are not compatible with each other, not proven or require further research.
+
+### Simple Send Improvements
+- JoinMarket: https://github.com/zkSNACKs/Meta/issues/5
+- Friend CoinJoin Network:  https://github.com/zkSNACKs/Meta/issues/17
+- Merge Avoidance with BIP47 Payment Codes: https://github.com/zkSNACKs/Meta/issues/10
+- Clusterfuck Wallet Strategies: https://github.com/zkSNACKs/Meta/issues/11, https://github.com/zkSNACKs/Meta/issues/18, https://github.com/nopara73/ZeroLink/issues/42, https://github.com/zkSNACKs/Meta/issues/18
+- Pay to EndPoint: https://github.com/zkSNACKs/Meta/issues/18, https://github.com/zkSNACKs/Meta/issues/18
+
+### Coin Control and Privacy Feedback Improvements
+- New Type of Bitcoin UI: https://github.com/zkSNACKs/Meta/issues/8
+- Input Joining Avoidance Strategy by Killing Kittens: https://github.com/nopara73/ZeroLink/issues/65
+- Improve History of a Coin: https://github.com/zkSNACKs/WalletWasabi/issues/612
+- Accurate Anonymity Set Calculation: https://github.com/zkSNACKs/WalletWasabi/issues/728
+- Interactive Privacy Suggestions when Spending - https://github.com/zkSNACKs/WalletWasabi/issues/729
+
+### Mixing Improvements
+- Mix to Others: https://github.com/zkSNACKs/Meta/issues/6, https://github.com/nopara73/ZeroLink/issues/75
+- Mixing Unequal Inputs: https://github.com/zkSNACKs/Meta/issues/4, https://github.com/nopara73/ZeroLink/issues/74
+- Dynamic Mix Denomination: https://github.com/nopara73/ZeroLink/issues/41
+
+### Lightning Network Leverage
+- CoinJoinXT
+- Open Lightning Channels with ZeroLink in Wasabi - https://github.com/zkSNACKs/Meta/issues/3, https://github.com/nopara73/ZeroLink/issues/58
 
 ## V. General Wallet Features
 https://github.com/zkSNACKs/Meta/issues/15
