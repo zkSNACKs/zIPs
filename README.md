@@ -256,9 +256,13 @@ The question of a web-wallet is also something to think about. However, it may n
 Another way to improve the software is to let developers play with it through a daemon (RPC?) process. https://github.com/zkSNACKs/Meta/issues/12
 
 ## VII. Extending the Scope of Privacy
-https://github.com/zkSNACKs/Meta/issues/16
-https://github.com/zkSNACKs/Meta/issues/13
-https://github.com/zkSNACKs/Meta/issues/14
+
+Other non closely Bitcoin related features may be beneficial for the privacy of Wasabi users.
+
+- In-Wallet Block Explorer Query over Tor: https://github.com/zkSNACKs/Meta/issues/19
+- Integrated VPN Service For Oppressed Countries: https://github.com/zkSNACKs/Meta/issues/16
+- Basic PGP Client: https://github.com/zkSNACKs/Meta/issues/13
+- Simple P2P, Encrypted Messaging: https://github.com/zkSNACKs/Meta/issues/14
 
 ## VIII. Unique Wallet Features
 
