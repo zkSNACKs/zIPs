@@ -37,7 +37,7 @@ Note that, the developers of Wasabi are currently occupied by section II. [Stabi
 Wasabi is an [open-source](https://github.com/zkSNACKs/WalletWasabi/), desktop Bitcoin wallet, working on Windows, Linux and OSX, written in [.NET Core](https://en.wikipedia.org/wiki/.NET_Core) (C#), which is cross platform and open source .NET. Wasabi uses [NBitcoin](https://github.com/MetacoSA/NBitcoin/) as its Bitcoin library, to which Wasabi developers are frequent contributors: [@lontivero](https://github.com/lontivero), [@nopara73](https://github.com/nopara73). Wasabi uses [Avalonia](https://github.com/AvaloniaUI/Avalonia/) library as its UI framework, where Wasabi developer [@danwalmsley](https://github.com/danwalmsley) is a maintainer.  
 Wasabi does not support and does not plan to support other currencies in the future.
 
-Now, let's look at what is going on under the hood for Wasabi, what tradeoffs it made, so we can later understand where it can be improved.
+Let's look at what is going on under the hood for Wasabi, what tradeoffs it made, so we can later understand where it can be improved.
 
 After setting up Wasabi and generating a wallet, Wasabi welcomes the user with a load wallet screen. Unlike other wallets, Wasabi have a way to use multiple wallets. This is beneficial for privacy, since many users may prefer or used to achieve coin separation this way. However Wasabi provides a convenient in-wallet coin separation interface, too, more on that later. It is interesting to note, that since coin separation can be achieved in the wallet easily, initially we did not plan for such a wallet management system, our UX design choices naturally lead us down this road.
 ![](https://i.imgur.com/139bjDH.png)
@@ -48,7 +48,7 @@ The "Tor" label shows the status of the Tor daemon. Tor is an anonymity network,
 
 ![](https://i.imgur.com/054zvbY.png)
 
-Wasabi's backend server is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to in [BIP157](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki)-[BIP158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki). More on the difference soon.
+Wasabi's backend server is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to in [BIP157](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki)-[BIP158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki). More on the difference soon. Before that, it is worth pointing out that the design choice of building a light wallet was made, because it can get more users and more users means larger coinjoins. Historically all light wallets were vulnerable against some kind of network observer, due to unprivate utxo fetching. A few years ago only type of wallet that wasn't vulnerable was a full node, like Bitcoin Core. The first iteration of Wasabi was [HiddenWallet](https://github.com/zkSNACKs/WalletWasabi/tree/hiddenwallet-v0.6), which was a full-block SPV wallet, that aimed to leverage with the omission of initial blockchain downloading compared to a full node. This may in theory was a lighter wallet, in practice, it was painful to wait for wallet synchronization every time the wallet was opened.
 
 ![](https://i.imgur.com/lSXrOpJ.png)
 
