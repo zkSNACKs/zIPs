@@ -206,13 +206,13 @@ Mix to Others (https://github.com/zkSNACKs/Meta/issues/6, https://github.com/nop
 
 ### Simple Send Improvements
 
-Improving simple send by current Bitcoin anonymity techniques is also an interesting topic. These do not even have to distrupt the current user workflow, they can mostly "just happen" in the background.
+Improving simple send by current Bitcoin anonymity techniques is also an interesting topic. These do not even have to distrupt the current user workflow, they can mostly "just happen" in the background. Some additional thoughts and details on this section can be found [here](https://github.com/zkSNACKs/Meta/issues/23#issuecomment-430514345).
 
 - JoinMarket: https://github.com/zkSNACKs/Meta/issues/5
 - Friend CoinJoin Network:  https://github.com/zkSNACKs/Meta/issues/17
 - Merge Avoidance with BIP47 Payment Codes: https://github.com/zkSNACKs/Meta/issues/10
 - Clusterfuck Wallet Strategies: https://github.com/zkSNACKs/Meta/issues/11, https://github.com/zkSNACKs/Meta/issues/18, https://github.com/nopara73/ZeroLink/issues/42, https://github.com/zkSNACKs/Meta/issues/18
-- Pay to EndPoint: https://github.com/zkSNACKs/Meta/issues/18, https://github.com/zkSNACKs/Meta/issues/18
+- Pay to EndPoint: https://github.com/zkSNACKs/Meta/issues/18, https://github.com/zkSNACKs/Meta/issues/18, https://github.com/zkSNACKs/Meta/issues/23
 
 ### Coin Control and Privacy Feedback Improvements
 
