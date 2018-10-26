@@ -213,6 +213,7 @@ Improving simple send by current Bitcoin anonymity techniques is also an interes
 - Merge Avoidance with BIP47 Payment Codes: https://github.com/zkSNACKs/Meta/issues/10
 - Clusterfuck Wallet Strategies: https://github.com/zkSNACKs/Meta/issues/11, https://github.com/zkSNACKs/Meta/issues/18, https://github.com/nopara73/ZeroLink/issues/42, https://github.com/zkSNACKs/Meta/issues/18
 - Pay to EndPoint: https://github.com/zkSNACKs/Meta/issues/18, https://github.com/zkSNACKs/Meta/issues/18, https://github.com/zkSNACKs/Meta/issues/23
+- GroupSend: https://github.com/zkSNACKs/WalletWasabi/issues/760
 
 ### Coin Control and Privacy Feedback Improvements
 
