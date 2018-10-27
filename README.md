@@ -251,7 +251,7 @@ Since most of the world does not speak English, localization (https://github.com
 
 Wasabi, in theory could use P2SH over P2WPKH, wrapped segwit addresses, (https://github.com/zkSNACKs/Meta/issues/7) since the ability to spend to bech32 addresses is not quite there yet. On the other hand, this could be considered as a backwards looking, short-sighted improvement.
 
-In theory, Wasabi could support smart phones (Android, iOS). In practive the tech is probably not there yet. The concept of network analysis resistant smartphone Bitcoin wallets are not yet proven. With the concept of Wasabi, it is likely, the wallet would use too much disk space, battery and network today. However, the tech is improving exponentially, so timing have special importance on this matter. https://github.com/zkSNACKs/Meta/issues/9
+In theory, Wasabi could support smart phones (Android, iOS). In practice the tech is unlikely to be there yet. The concept of network analysis resistant smartphone Bitcoin wallets are not yet proven. With the concept of Wasabi, it is likely, the wallet would use too much disk space, battery and network today. However, the tech is improving exponentially, so timing have special importance on this matter. https://github.com/zkSNACKs/Meta/issues/9
 
 The question of a web-wallet is also something to think about. However, it may not be possible at all to build a network analysis resistent web wallet, nor to build a secure web wallet in general. Nevertheless this question deserves more thought. https://github.com/zkSNACKs/Meta/issues/20  
 
