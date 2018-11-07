@@ -55,7 +55,7 @@ Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/no
 
 Back to Wasabi. After loading the wallet the user can generate a receive address. Some important design choices were made here. First, Wasabi had to be a Segregated Witness only wallet, so the registration of unconfirmed coinjoin outputs into a new coinjoin round is done to prevent malleability attacks. However, the developers of Wasabi decided to make the wallet native segwit (bech32) only, not supporting wrapped segwit. This way, the backend server can leverage this and only generate filters regarding bech32 addresses. This makes Wasabi's filter size a few megabytes today, instead of >1GB (ToDo: insert source here, I guess Blummer Tamas came up with this number an posted to the dev mailing list.) At first glance, this may be seen as hazardous to privacy, however Wasabi user utxos can be identified as Wasabi utxos by the huge coinjoins that only Wasabi does anyway, so no additional privacy loss happens there. In the future, as more and more wallets adopt bech32, Wasabi developers will have to look at how to scale the performance and network usage of the wallet. Failing that, Wasabi's initial sync will slow down.
 
-This page shows the wallets that can be used to send to and receive from Wasabi https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets
+This page shows the wallets that can be used to send to and receive from Wasabi: https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets
 
 ![](https://i.imgur.com/aZb6TbZ.png)
 
