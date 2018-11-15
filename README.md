@@ -49,11 +49,11 @@ The "Tor" label shows the status of the Tor daemon. Tor is an anonymity network 
 
 ![](https://i.imgur.com/054zvbY.png)
 
-Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to [BIP158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki). More information will be provided about the difference soon. Before that, it is worth pointing out that the design choice of building a light wallet was made because such a wallet can attract orders of magnitude more users compared to a a wallet on top of a full node, and more users means larger and faster coinjoins. Historically, all light wallets were vulnerable to some kind of network observer due to unprivate utxo fetching. A few years ago, the only type of wallet that wasn't vulnerable was a full node, like Bitcoin Core. The first iteration of Wasabi was [HiddenWallet](https://github.com/zkSNACKs/WalletWasabi/tree/hiddenwallet-v0.6), which was a full-block SPV wallet that aimed to leverage useability without compromising privacy through the omission of initial blockchain downloading compared to a full node. In theory, it was a light wallet. In practice, it was hard to compete with Bitcoin Core's micro-optimizations and it was still painful to wait for wallet synchronization every time the wallet was opened.
+Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to [BIP158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki). More information will be provided about the difference soon. Before that, it is worth pointing out that the design choice of building a light wallet was made because such a wallet can attract orders of magnitude more users compared to a wallet on top of a full node, and more users means larger and faster coinjoins. Historically, all light wallets were vulnerable to some kind of network observer due to unprivate utxo fetching. A few years ago, the only type of wallet that wasn't vulnerable was a full node, like Bitcoin Core. The first iteration of Wasabi was [HiddenWallet](https://github.com/zkSNACKs/WalletWasabi/tree/hiddenwallet-v0.6), which was a full-block SPV wallet that aimed to leverage usability without compromising privacy through the omission of initial blockchain downloading compared to a full node. In theory, it was a light wallet. In practice, it was hard to compete with Bitcoin Core's micro-optimizations and it was still painful to wait for wallet synchronization every time the wallet was opened.
 
 ![](https://i.imgur.com/lSXrOpJ.png)
 
-Back to Wasabi. After loading the wallet the user can generate a receive address. Some important design choices were made here. First, Wasabi had to be a Segregated Witness only wallet, so the registration of unconfirmed coinjoin outputs into a new coinjoin round is done to prevent malleability attacks. However, the developers of Wasabi decided to make the wallet native segwit (bech32) only, not supporting wrapped segwit. This way, the backend server can leverage this and only generate filters regarding bech32 addresses. This makes Wasabi's filter size a few megabytes today, instead of >1GB (ToDo: insert source here, I guess Blummer Tamas came up with this number an posted to the dev mailing list.) At first glance, this may be seen as hazardous to privacy, however Wasabi user utxos can be identified as Wasabi utxos by the huge coinjoins that only Wasabi does anyway, so no additional privacy loss happens there. In the future, as more and more wallets adopt bech32, Wasabi developers will have to look at how to scale the performance and network usage of the wallet. Failing that, Wasabi's initial sync will slow down.
+Back to Wasabi. After loading the wallet, the user can generate a receive address. Some important design choices were made here. First, Wasabi had to be a Segregated Witness only wallet, so the registration of unconfirmed coinjoin outputs into a new coinjoin round is done to prevent malleability attacks. However, the developers of Wasabi decided to make the wallet native segwit (bech32) only, not supporting wrapped segwit. This way, the backend server can leverage this and only generate filters regarding bech32 addresses. This makes Wasabi's filter size a few megabytes today, instead of >1GB (ToDo: insert source here, I guess Blummer Tamas came up with this number and posted to the dev mailing list.) At first glance, this may be seen as hazardous to privacy, however Wasabi user utxos can be identified as Wasabi utxos by the huge coinjoins that only Wasabi does anyway, so no additional privacy loss happens there. In the future, as more and more wallets adopt bech32, Wasabi developers will have to look at how to scale the performance and network usage of the wallet. Failing that, Wasabi's initial sync will slow down.
 
 This page shows the wallets that can be used to send to and receive from Wasabi: https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets
 
@@ -187,7 +187,7 @@ It is also worth pointing out that if [Confidential Transactions](https://people
 
 #### Unequal Input Mixing
 
-One of the most exciting advancements could be achieved by improving the mixing itself. The intution behind Unequal Input Mixing, (https://github.com/zkSNACKs/Meta/issues/4, https://github.com/nopara73/ZeroLink/issues/74) that could replace today's fixed denomination mixing, is clear, and its benefits are huge. However this requires further research.
+One of the most exciting advancements could be achieved by improving the mixing itself. The intuition behind Unequal Input Mixing, (https://github.com/zkSNACKs/Meta/issues/4, https://github.com/nopara73/ZeroLink/issues/74) that could replace today's fixed denomination mixing, is clear, and its benefits are huge. However this requires further research.
 
 The currently identified advantages of unequal input mixing compared to fixed denomination mixing are discussed briefly below, using the following notation:  
 
@@ -208,7 +208,7 @@ Mix to Others (https://github.com/zkSNACKs/Meta/issues/6, https://github.com/nop
 
 ### Simple Send Improvements
 
-Improving simple send using current Bitcoin anonymity techniques is also an interesting topic. These do not even have to distrupt the current user workflow, they can mostly "just happen" in the background. Some additional thoughts and details on this section can be found [here](https://github.com/zkSNACKs/Meta/issues/23#issuecomment-430514345).
+Improving simple send using current Bitcoin anonymity techniques is also an interesting topic. These do not even have to disrupt the current user workflow, they can mostly "just happen" in the background. Some additional thoughts and details on this section can be found [here](https://github.com/zkSNACKs/Meta/issues/23#issuecomment-430514345).
 
 - JoinMarket: https://github.com/zkSNACKs/Meta/issues/5
 - Friend CoinJoin Network:  https://github.com/zkSNACKs/Meta/issues/17
@@ -238,7 +238,7 @@ At this point, it is too early to start leveraging LN in a privacy oriented wall
 
 Wasabi today has all the features a Bitcoin wallet needs that are not related to privacy. There may be other useful features to add, however.
 - Pay to Many: https://github.com/zkSNACKs/WalletWasabi/issues/733
-- Avanced RBF (ethical concerns here): https://github.com/zkSNACKs/Meta/issues/15
+- Advanced RBF (ethical concerns here): https://github.com/zkSNACKs/Meta/issues/15
 - Lightning Network integration eventually will be unavoidable for any Bitcoin wallet if they want to stay in business, since blockchains don't scale: https://github.com/zkSNACKs/Meta/issues/2
 - Sweep Private Key: https://github.com/zkSNACKs/WalletWasabi/issues/486
 - Paper Wallet Generation: https://github.com/zkSNACKs/WalletWasabi/issues/727
@@ -253,10 +253,10 @@ Since most of the world does not speak English, localization (https://github.com
 
 Wasabi, in theory could use P2SH over P2WPKH, wrapped segwit addresses, (https://github.com/zkSNACKs/Meta/issues/7) since the ability to spend to bech32 addresses is not quite there yet. On the other hand, this could be considered a backward-looking short-sighted improvement.
 
-In theory, Wasabi could support smart phones (Android, iOS). In practice, these platforms and their tools are not mature enough just yet. The concept of network analysis resistant smartphone wallets are not yet proven. If we would try to port Wasabi's code today, the wallet would use too much storage space, battery and network. Another implementation issue comes from Wasabi's reliance on Tor, which adds another layer of friction. On the desktop, we were able to work around nearly all of the reliability issues of the anonymity network, but the current state of Tor on mobile platforms may pose additional challenges.  
+In theory, Wasabi could support smart phones (Android, iOS). In practice, these platforms and their tools are not mature enough just yet. The concept of network analysis resistant smartphone wallets is not yet proven. If we would try to port Wasabi's code today, the wallet would use too much storage space, battery and network. Another implementation issue comes from Wasabi's reliance on Tor, which adds another layer of friction. On the desktop, we were able to work around nearly all of the reliability issues of the anonymity network, but the current state of Tor on mobile platforms may pose additional challenges.  
 However, technology is improving quickly, thus, timing has special importance in this matter. https://github.com/zkSNACKs/Meta/issues/9
 
-The question of a web-wallet is also something to think about. However, it may not be possible to build a network analysis resistent web wallet, nor to build a secure web wallet in general. Nevertheless this question deserves more thought. https://github.com/zkSNACKs/Meta/issues/20  
+The question of a web-wallet is also something to think about. However, it may not be possible to build a network analysis resistant web wallet, nor to build a secure web wallet in general. Nevertheless this question deserves more thought. https://github.com/zkSNACKs/Meta/issues/20  
 
 Another way to improve the software is to let developers play with it through a daemon (RPC?) process. https://github.com/zkSNACKs/Meta/issues/12
 
@@ -271,7 +271,7 @@ Other non closely Bitcoin related features may be beneficial for the privacy of 
 
 ## VIII. Unique Wallet Features
 
-Unique wallet features are a set of unorganied ideas that are not closely related to privacy. These are by no means necessary for Wasabi, but what fun is there in programming if the developers are not allowed to play with their creativity once in a while?
+Unique wallet features are a set of unorganized ideas that are not closely related to privacy. These are by no means necessary for Wasabi, but what fun is there in programming if the developers are not allowed to play with their creativity once in a while?
 
 - Clipboard Hijacker Malware Defense: https://github.com/zkSNACKs/WalletWasabi/issues/496, https://github.com/zkSNACKs/WalletWasabi/pull/697
 - Password Masking Fun: https://github.com/zkSNACKs/WalletWasabi/issues/439
@@ -279,4 +279,4 @@ Unique wallet features are a set of unorganied ideas that are not closely relate
 
 ## IX. Conclusion
 
-In this document, we gave a comprehensive overview of Wasabi Wallet. Unlike the creators of many other products, we deliberately decided to honestly and extensively describe and discuss Wasabi's shortcomings, tradeoffs and design decisions. We outlined our ideas and our future technical plans and helped the reader get familiar with our thinking process. This document can be analysed and used by anyone who would like to achieve the strongest privacy in Bitcoin today without falling prey to misinformation that is rampant in the space. Of course, it is unavoidable that the reader will still be suspectible to the authors unconscious biases, and we apologize for that in advance.
+In this document, we gave a comprehensive overview of Wasabi Wallet. Unlike the creators of many other products, we deliberately decided to honestly and extensively describe and discuss Wasabi's shortcomings, tradeoffs and design decisions. We outlined our ideas and our future technical plans and helped the reader get familiar with our thinking process. This document can be analyzed and used by anyone who would like to achieve the strongest privacy in Bitcoin today without falling prey to misinformation that is rampant in the space. Of course, it is unavoidable that the reader will still be susceptible to the authors unconscious biases, and we apologize for that in advance.
