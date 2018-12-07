@@ -109,64 +109,14 @@ The above number means that Wasabi's coinjoins have created >102 BTC outputs wit
 ## II. Stability, Performance, UX, Code Quality
 
 As was discussed above, the main priority of Wasabi developers is currently the stability, performance, code quality and user experience of Wasabi. Great care must be taken here because the more users a network reliant privacy software has, the better privacy it offers. The more users there are, the better the software is. In Wasabi, this is most apparent during CoinJoins. The more users participating in a round, the higher the anonymity set the CoinJoin achieves and the more frequent the rounds will be. In our calculations, if Wasabi would acquire the volume of the most popular Bitcoin mixers, Wasabi could provide a 100 anonymity set round with the denomination of 0.1 BTC every 3 to 5 minutes.  
-This section consists of many small issues, waiting to be solved one-by-one. Since solving these issues is often more effective than discussing them, they won't be extensively discussed in this document. Related issues as of 2018 October:
-
-https://github.com/zkSNACKs/WalletWasabi/issues/407, 
-https://github.com/zkSNACKs/WalletWasabi/issues/386, 
-https://github.com/zkSNACKs/WalletWasabi/issues/416, 
-https://github.com/zkSNACKs/WalletWasabi/issues/408, 
-https://github.com/zkSNACKs/WalletWasabi/issues/430, 
-https://github.com/zkSNACKs/WalletWasabi/issues/436, 
-https://github.com/zkSNACKs/WalletWasabi/issues/462, 
-https://github.com/zkSNACKs/WalletWasabi/issues/465, 
-https://github.com/zkSNACKs/WalletWasabi/issues/474, 
-https://github.com/zkSNACKs/WalletWasabi/issues/445, 
-https://github.com/zkSNACKs/WalletWasabi/issues/553, 
-https://github.com/zkSNACKs/WalletWasabi/issues/420, 
-https://github.com/zkSNACKs/WalletWasabi/issues/414, 
-https://github.com/zkSNACKs/WalletWasabi/issues/409, 
-https://github.com/zkSNACKs/WalletWasabi/issues/570, 
-https://github.com/zkSNACKs/WalletWasabi/issues/573, 
-https://github.com/zkSNACKs/WalletWasabi/issues/427, 
-https://github.com/zkSNACKs/WalletWasabi/issues/572, 
-https://github.com/zkSNACKs/WalletWasabi/issues/587, 
-https://github.com/zkSNACKs/WalletWasabi/issues/588, 
-https://github.com/zkSNACKs/WalletWasabi/issues/432, 
-https://github.com/zkSNACKs/WalletWasabi/issues/597, 
-https://github.com/zkSNACKs/WalletWasabi/issues/596, 
-https://github.com/zkSNACKs/WalletWasabi/issues/610, 
-https://github.com/zkSNACKs/WalletWasabi/issues/580, 
-https://github.com/zkSNACKs/WalletWasabi/issues/449, 
-https://github.com/zkSNACKs/WalletWasabi/issues/611, 
-https://github.com/zkSNACKs/WalletWasabi/issues/533, 
-https://github.com/zkSNACKs/WalletWasabi/issues/618, 
-https://github.com/zkSNACKs/WalletWasabi/issues/440, 
-https://github.com/zkSNACKs/WalletWasabi/issues/622, 
-https://github.com/zkSNACKs/WalletWasabi/issues/642, 
-https://github.com/zkSNACKs/WalletWasabi/issues/655, 
-https://github.com/zkSNACKs/WalletWasabi/issues/675, 
-https://github.com/zkSNACKs/WalletWasabi/issues/688, 
-https://github.com/zkSNACKs/WalletWasabi/issues/689, 
-https://github.com/zkSNACKs/WalletWasabi/issues/691, 
-https://github.com/zkSNACKs/WalletWasabi/issues/692, 
-https://github.com/zkSNACKs/WalletWasabi/issues/564, 
-https://github.com/zkSNACKs/WalletWasabi/issues/444, 
-https://github.com/zkSNACKs/WalletWasabi/issues/714, 
-https://github.com/zkSNACKs/WalletWasabi/issues/716, 
-https://github.com/zkSNACKs/WalletWasabi/issues/720, 
-https://github.com/zkSNACKs/WalletWasabi/issues/501, 
-https://github.com/zkSNACKs/WalletWasabi/issues/719, 
-https://github.com/zkSNACKs/WalletWasabi/issues/722, 
-https://github.com/zkSNACKs/WalletWasabi/issues/723, 
-https://github.com/zkSNACKs/WalletWasabi/issues/724, 
-https://github.com/zkSNACKs/WalletWasabi/issues/725, 
-https://github.com/zkSNACKs/WalletWasabi/issues/726, 
-https://github.com/zkSNACKs/WalletWasabi/issues/730, 
-https://github.com/zkSNACKs/WalletWasabi/issues/718
+This section consists of many small issues, waiting to be solved one-by-one. Since solving these issues is often more effective than discussing them, they won't be discussed in this document.
 
 ## III. Education
 
-While education, content creation and marketing have little place in a technical document, they are still important parts of the big picture. Through education, Wasabi can obtain new users. The more Wasabi users there are, the better their privacy. Advancing this issue can take various, often opportunistic forms.
+While education, content creation and marketing have little place in a technical document, they are still important parts of the big picture. Through education, Wasabi can obtain new users. The more Wasabi users there are, the better their privacy. Advancing this issue can take various, often opportunistic forms. A few ideas:
+
+- Add Infographics to software https://github.com/zkSNACKs/Meta/issues/32
+- Implement Bitcoin Academy https://github.com/zkSNACKs/Meta/issues/33
 
 ## IV. Bitcoin Privacy Improvements
 
@@ -249,16 +199,41 @@ Wasabi today has all the features a Bitcoin wallet needs that are not related to
 
 The more users use the wallet the more privacy it can provide.  
 
+### Localization
+
 Since most of the world does not speak English, localization (https://github.com/zkSNACKs/Meta/issues/22) of Wasabi is something to consider.
 
+### Traditional Bitcoin Addresses
+
 Wasabi, in theory could use P2SH over P2WPKH, wrapped segwit addresses, (https://github.com/zkSNACKs/Meta/issues/7) since the ability to spend to bech32 addresses is not quite there yet. On the other hand, this could be considered a backward-looking short-sighted improvement.
+
+### Smartphone
 
 In theory, Wasabi could support smart phones (Android, iOS). In practice, these platforms and their tools are not mature enough just yet. The concept of network analysis resistant smartphone wallets is not yet proven. If we would try to port Wasabi's code today, the wallet would use too much storage space, battery and network. Another implementation issue comes from Wasabi's reliance on Tor, which adds another layer of friction. On the desktop, we were able to work around nearly all of the reliability issues of the anonymity network, but the current state of Tor on mobile platforms may pose additional challenges.  
 However, technology is improving quickly, thus, timing has special importance in this matter. https://github.com/zkSNACKs/Meta/issues/9
 
+### Web Wallet
+
 The question of a web-wallet is also something to think about. However, it may not be possible to build a network analysis resistant web wallet, nor to build a secure web wallet in general. Nevertheless this question deserves more thought. https://github.com/zkSNACKs/Meta/issues/20  
 
-Another way to improve the software is to let developers play with it through a daemon (RPC?) process. https://github.com/zkSNACKs/Meta/issues/12
+### Hardware Wallet
+
+An increasing number of Bitcoin users are using hardware wallets. CoinJoins would require autosign function from hardware wallet creators. This may decrease security of hardware wallets, therefore hardware wallet creators may be reluctant to support Wasabi. Further research on this topic is needed. Failing to convince hardware wallet creators of autosign Wasabi could also consider rolling out its own hardware wallet.  
+Hybrid, coinjoinless hardware wallet support is possible, however its usefulness is debetable and may lead to maintenance and UX issues. 
+
+https://github.com/zkSNACKs/Meta/issues/30 https://github.com/zkSNACKs/Meta/issues/31
+
+### Daemon
+
+Another way to improve the software is to let developers play with it through a daemon (RPC?) process. This however may lead to enterprise adoption, which is good for liquidity, but there is a risk of centralization and thus Sybil attacks. May become more likely. For example an exchange could decide to add coinjoins and if they acquire 50% of liquidity in Wasabi, this way many of the wallet assumptions about anonymity sets would become less accurate. https://github.com/zkSNACKs/Meta/issues/12
+
+### .NET Ecosystem
+
+Wasabi could roll out a NuGet package, enabling developers to build applications with Wasabi. It would be also beneficial and not difficult to integrate Wasabi into existing .NET softwares directly, like BTCPay. https://github.com/btcpayserver/btcpayserver
+
+### Bech32 Adoption
+
+Wasabi wallet uses bech32 addresses. These addresses are not fully supported by the whole Bitcoin ecosystem. It would be beneficial to make pull requests to open source softwares to support sending money to bech32 addresses.
 
 ## VII. Extending the Scope of Privacy
 
@@ -275,7 +250,6 @@ Unique wallet features are a set of unorganized ideas that are not closely relat
 
 - Clipboard Hijacker Malware Defense: https://github.com/zkSNACKs/WalletWasabi/issues/496, https://github.com/zkSNACKs/WalletWasabi/pull/697
 - Password Masking Fun: https://github.com/zkSNACKs/WalletWasabi/issues/439
-- Magic Button: https://github.com/zkSNACKs/WalletWasabi/issues/608
 
 ## IX. Conclusion
 
