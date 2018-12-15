@@ -203,9 +203,13 @@ The more users use the wallet the more privacy it can provide.
 
 Since most of the world does not speak English, localization (https://github.com/zkSNACKs/Meta/issues/22) of Wasabi is something to consider.
 
-### Traditional Bitcoin Addresses
+### Traditional Bitcoin Addresses vs Bech32 Adoption
+
+Wasabi wallet uses bech32 addresses only. These addresses are not fully supported by the whole Bitcoin ecosystem. It would be beneficial to make pull requests to open source softwares to support sending money to bech32 addresses: https://github.com/zkSNACKs/WalletWasabi/issues/951
 
 Wasabi, in theory could use P2SH over P2WPKH, wrapped segwit addresses, (https://github.com/zkSNACKs/Meta/issues/7) since the ability to spend to bech32 addresses is not quite there yet. On the other hand, this could be considered a backward-looking short-sighted improvement.
+
+Another way of facilitating funds to make their way into the wallet would be to introduce transitionary P2WPKH over P2SH addresses those wouldn not be checked against Golomb-Rice filters, but rather a single backend query would establish its balance only once, then immediately sweeping the money to a bech32 wallet-managed address: https://github.com/zkSNACKs/Meta/issues/34
 
 ### Smartphone
 
@@ -231,10 +235,6 @@ Wasabi already has a public web API. However developers should not build wallets
 ### .NET Ecosystem
 
 Wasabi could roll out a NuGet package, enabling developers to build applications with Wasabi. It would be also beneficial and not difficult to integrate Wasabi into existing .NET softwares directly, like BTCPay. https://github.com/btcpayserver/btcpayserver
-
-### Bech32 Adoption
-
-Wasabi wallet uses bech32 addresses. These addresses are not fully supported by the whole Bitcoin ecosystem. It would be beneficial to make pull requests to open source softwares to support sending money to bech32 addresses.
 
 ## VII. Extending the Scope of Privacy
 
