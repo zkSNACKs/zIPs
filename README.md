@@ -244,6 +244,7 @@ Other non closely Bitcoin related features may be beneficial for the privacy of 
 - Integrated VPN Service For Oppressed Countries: https://github.com/zkSNACKs/Meta/issues/16
 - Basic PGP Client: https://github.com/zkSNACKs/Meta/issues/13
 - Simple P2P, Encrypted Messaging: https://github.com/zkSNACKs/Meta/issues/14
+- Add Folder Encryption https://github.com/zkSNACKs/Meta/issues/36
 
 ## VIII. Unique Wallet Features
 
