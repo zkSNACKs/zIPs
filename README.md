@@ -227,6 +227,10 @@ Hybrid, coinjoinless hardware wallet support is possible, however its usefulness
 
 https://github.com/zkSNACKs/Meta/issues/30 https://github.com/zkSNACKs/Meta/issues/31
 
+### Bitcoin Core
+
+Some of the users use full nodes, mainly Bitcoin Core as their personal wallet, because this is the ultimate way of minimizing trust. Wasabi could ship with a bitcoind, much the same way as it does with Tor.
+
 ### Daemon/API
 
 Another way to improve the software is to let developers play with it through a daemon (RPC?) process. This however may lead to enterprise adoption, which is good for liquidity, but there is a risk of centralization and thus Sybil attacks. May become more likely. For example an exchange could decide to add coinjoins and if they acquire 50% of liquidity in Wasabi, this way many of the wallet assumptions about anonymity sets would become less accurate. https://github.com/zkSNACKs/Meta/issues/12
