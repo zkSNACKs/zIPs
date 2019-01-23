@@ -256,7 +256,6 @@ Other non closely Bitcoin related features may be beneficial for the privacy of 
 Unique wallet features are a set of unorganized ideas that are not closely related to privacy. These are by no means necessary for Wasabi, but what fun is there in programming if the developers are not allowed to play with their creativity once in a while?
 
 - Clipboard Hijacker Malware Defense: https://github.com/zkSNACKs/WalletWasabi/issues/496, https://github.com/zkSNACKs/WalletWasabi/pull/697
-- Password Masking Fun: https://github.com/zkSNACKs/WalletWasabi/issues/439
 
 ## IX. Conclusion
 
