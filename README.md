@@ -249,6 +249,7 @@ Other non closely Bitcoin related features may be beneficial for the privacy of 
 - Basic PGP Client: https://github.com/zkSNACKs/Meta/issues/13
 - Simple P2P, Encrypted Messaging: https://github.com/zkSNACKs/Meta/issues/14
 - Add Folder Encryption https://github.com/zkSNACKs/Meta/issues/36
+- Protect Data Folders https://github.com/zkSNACKs/Meta/issues/39
 
 ## VIII. Unique Wallet Features
 
