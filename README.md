@@ -223,10 +223,7 @@ The question of a web-wallet is also something to think about. However, it may n
 
 ### Hardware Wallet
 
-An increasing number of Bitcoin users are using hardware wallets. CoinJoins would require autosign function from hardware wallet creators. This may decrease security of hardware wallets, therefore hardware wallet creators may be reluctant to support Wasabi. Further research on this topic is needed. Failing to convince hardware wallet creators of autosign Wasabi could also consider rolling out its own hardware wallet.  
-Hybrid, coinjoinless hardware wallet support is possible, however its usefulness is debetable and may lead to maintenance and UX issues. 
-
-https://github.com/zkSNACKs/Meta/issues/30 https://github.com/zkSNACKs/Meta/issues/31
+Wasabi has hardware wallet integration however in this mode coinjoining is not possible: https://github.com/zkSNACKs/WalletWasabi/pull/1341
 
 ### Bitcoin Core
 
