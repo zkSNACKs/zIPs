@@ -214,7 +214,7 @@ A way of facilitating funds to make their way into the wallet would be to introd
 
 ### Smartphone
 
-In theory, Wasabi could support smart phones (Android, iOS). In practice, these platforms and their tools are not mature enough just yet. The concept of network analysis resistant smartphone wallets is not yet proven. If we would try to port Wasabi's code today, the wallet would use too much storage space, battery and network. Another implementation issue comes from Wasabi's reliance on Tor, which adds another layer of friction. On the desktop, we were able to work around nearly all of the reliability issues of the anonymity network, but the current state of Tor on mobile platforms may pose additional challenges.  
+In theory, Wasabi could support smart phones (Android, iOS). In practice, these platforms and their tools are not mature enough just yet. The concept of network analysis resistant smartphone wallets is not yet proven. If we would try to port Wasabi's code today, the wallet would use too much storage space, battery and network.
 However, technology is improving quickly, thus, timing has special importance in this matter. https://github.com/zkSNACKs/Meta/issues/9
 
 ### Web Wallet
