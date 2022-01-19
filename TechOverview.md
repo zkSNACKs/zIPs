@@ -1,3 +1,5 @@
+This document was created in 2018 and is outdated by now.
+
 # A Technical Overview of Wasabi Wallet, Future Ideas, Plans and Strategy
 
 ## Abstract
