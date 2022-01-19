@@ -22,7 +22,7 @@ Things work best if we all speak the same language and this language is C#.
 
 ### Accept Bitcoin
 
-Contributors to zkSNACks get payments in Bitcoin.
+Store of value, medium of exchange, unit of account: the functions of money. zkSNACKs uses BTC as store of value and medium of exchange, and USD as unit of account. As a consequence zkSNACKs contributors receive their payments in Bitcoin, and agreements and contracts are denominated in USD shitcoin.
 
 ### Spend Bitcoin
 
