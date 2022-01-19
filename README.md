@@ -11,7 +11,7 @@ zkSNACKs is not an ordinary company. It is a collection of like-minded individua
 ### Bitcoin Only
 
 - We all hate wasting our time
-- Cryptocurrency is the future
+- Bitcoin is the future
 - Good money drives out bad money
 
 As long as Bitcoin is the largest cryptocurrency, dealing with altcoins is a likely way to end up on the wrong side of history. As of 2022, altcoins are noise and Bitcoin is the signal.
