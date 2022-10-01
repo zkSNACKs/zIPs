@@ -1,4 +1,4 @@
-# zkSNACKs Handbook
+# zkSNACKs First Principles
 
 As more contributors are joining, the less they know what's going on. This document is your antidote to chaos on the land of cypherpunks.
 
