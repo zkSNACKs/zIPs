@@ -2,11 +2,11 @@
 
 ## Overview
 
-We propose a system to help prioritize the product development without a static hierarchy, allowing the number of contributors to scale without adding too many inefficiencies or formal authority.
+We propose a system to help prioritize the product development without a static hierarchy, allowing the number of contributors to scale limiting inefficiencies or formal authority.
 
 ## Motivation
 
-Which feature to build next? How does it look like? How do we make sure our technical power users like it without confusing the noobs we target in the first place? Who gets to make a decision on that? How often?
+Which feature to build next? How does it look like? How do we make sure that technical power users like it without confusing noobs? Who gets to make a decision on that? How often?
 
 Recent conversations have happened around potential redesigns for product features, such as the coinjoin status “music” box or unearthing buried features such as coin control. This pushed the team to think about the reasoning behind it and discuss how features are prioritized in Wasabi 2.0.
 
