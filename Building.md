@@ -1,12 +1,12 @@
-# Wasabi Product Development
+# Building
 
 ## Overview
 
-We propose a system to help prioritize the product development without a static hierarchy, allowing the number of contributors to scale limiting inefficiencies or formal authority. Integrates potentially well with [PR 84](https://github.com/zkSNACKs/zIPs/pull/84). This system is also expandable to any team.
+We propose a system to help prioritize the product development without a static hierarchy, allowing the number of contributors to scale limiting inefficiencies or formal authority. Integrates potentially well with [PR 84](https://github.com/zkSNACKs/zIPs/pull/84). This system could also be extended to any team, if useful.
 
 ## Motivation
 
-Which feature to build next? How does it look like? How do we make sure that technical power users like it without confusing noobs? Who gets to make a decision on that? How often?
+Which features to build next? How does it look like? How do we make sure that technical power users like it without confusing noobs? Who gets to make a decision on that? How often?
 
 Recent conversations have happened around potential redesigns for product features, such as the coinjoin status “music” box or unearthing buried features such as coin control. This pushed the team to think about the reasoning behind it and discuss how features are prioritized in Wasabi 2.0.
 
