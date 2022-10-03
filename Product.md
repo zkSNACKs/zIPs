@@ -2,7 +2,7 @@
 
 ## Overview
 
-We propose a system to help prioritize the product development without a static hierarchy, allowing the number of contributors to scale limiting inefficiencies or formal authority.
+We propose a system to help prioritize the product development without a static hierarchy, allowing the number of contributors to scale limiting inefficiencies or formal authority. Integrates potentially well with [PR 84](https://github.com/zkSNACKs/zIPs/pull/84).
 
 ## Motivation
 
