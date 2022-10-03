@@ -2,7 +2,7 @@
 
 ## Overview
 
-We propose a system to help prioritize the product development without a static hierarchy, allowing the number of contributors to scale limiting inefficiencies or formal authority. Integrates potentially well with [PR 84](https://github.com/zkSNACKs/zIPs/pull/84). This system could also be extended to any team, if useful.
+We propose a system to help prioritize the product development without a static hierarchy, allowing the number of contributors to scale limiting inefficiencies or formal authority. Integrates potentially well with [PR 84](https://github.com/zkSNACKs/zIPs/pull/84). This system could also be extended to any team, if useful. We hope it is not taken as an authoritative voice telling contributors how to work but as useful lessons learned from the past, shared in all humility.
 
 ## Motivation
 
@@ -18,8 +18,6 @@ Recent conversations have happened around potential redesigns for product featur
 ### _"People don't want a quarter-inch drill, they want a quarter-inch hole."_
 
 Meetings currently exist for discussing implementation details but less so for prioritization of features, which can lead to miscommunication, redesigns and inefficiencies. Could it be done better? Probably. This is what this proposal is about. This could allow Wasabi to scale to 100+ contributors and further reduce the need for authority by having a clear system of prioritization.
-
-We hope it is not taken as an authoritative voice telling contributors how to work but as lessons shared from past external experiences after observing how zkSNACKs function today.
 
 ## Implementation
 
