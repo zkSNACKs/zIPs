@@ -2,7 +2,7 @@
 
 ## Overview
 
-We propose a system to help prioritize the product development without a static hierarchy, allowing the number of contributors to scale limiting inefficiencies or formal authority. Integrates potentially well with [PR 84](https://github.com/zkSNACKs/zIPs/pull/84). This system could also be extended to any team, if useful. We hope it is not taken as an authoritative voice telling contributors how to work but as useful lessons learned from the past, shared in all humility.
+We propose a system to help prioritize the product development without a static hierarchy, allowing the number of contributors to scale limiting inefficiencies or formal authority. Integrates potentially well with [zIP 6](https://github.com/zkSNACKs/zIPs/pull/84). This system could also be extended to any team, if useful. We hope it is not taken as an authoritative voice telling contributors how to work but as useful lessons learned from the past, shared in all humility.
 
 ## Motivation
 
