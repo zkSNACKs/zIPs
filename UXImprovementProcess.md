@@ -5,7 +5,7 @@ zIP: 6
 Layer: Company
 Title: UX Improvement Process
 Author: cosmicbutterglue
-Status: Active
+Status: Proposed
 Type: Process
 Created: 2022-10-02
 License: lol
