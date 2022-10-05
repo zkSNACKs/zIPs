@@ -20,7 +20,7 @@ To avoid wasting time on developing UX solutions which may not be needed, or wor
 
 ### 0. Form a pool of UX Testers
 
-Establish a pool of UX Testers comprised of advanced users and noobs. Ideally both groups are made up of 10-20 people or more. For every round of testing, Testers should receive small bounties to motivate participation.
+Establish a pool of UX Testers comprised of 3/4 noobs and 1/4 advanced users. Ideally both groups are made up of 10-20 people or more. For every round of testing, Testers should receive small bounties to motivate participation.
 
 ### 1. Identify the issue
 
