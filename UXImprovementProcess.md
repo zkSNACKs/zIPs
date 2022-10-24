@@ -16,7 +16,7 @@ UX improvements are hard. Right now, we are gathering UX feedback from many diff
 
 ## Develop a Streamlined UX Improvement Process
 
-To avoid wasting time on developing UX solutions which may not be needed, or worse, make UX more complicated, we should develop a streamlined UX improvement process. This could look something like this:
+To avoid wasting time on developing UX solutions which may not be needed, or worse, make UX more complicated, we should develop a streamlined UX improvement process. 
 
 ### 0. Form a pool of UX Testers
 
