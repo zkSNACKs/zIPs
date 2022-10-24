@@ -18,7 +18,7 @@ In addition to resolvng UX issues, this process can help eliviate controversy wi
 
 ## Develop a Streamlined UX Improvement Process
 
-To avoid wasting time on developing UX solutions which may not be needed, or worse, make UX more complicated, we should develop a streamlined UX improvement process. 
+To avoid controversy as well as wasting time on developing UX solutions which may not be needed, or worse, make UX more complicated, we should develop a streamlined UX improvement process. 
 
 ### 0. Form a pool of UX Testers
 
