@@ -28,7 +28,7 @@ Often times we already have a good idea of what is hindering good UX. When such 
 
 ### 2. Get User Feedback
 
-Present the perceived issue to the UX Testing groups and observe whether the issue exists for the users. If the issue exists for users, move to step 3. If the majority of the testing groups does not see the issue, mark issue as resolved. If results are inconclusive, widen testing groups.
+Observe whether the issue exists for the testing groups by giving them tasks to perform in a documented, screen shared call. If the issue exists for users, move to step 3. If the majority of the testing groups does not encounter the issue, mark issue as resolved. If results are inconclusive, widen testing groups.
 
 ### 3. Develop a Solution.
 
