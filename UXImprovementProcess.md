@@ -28,7 +28,7 @@ Often times we already have a good idea of what is hindering good UX. When such 
 
 ### 2. Get User Feedback
 
-Present the perceived issue to the UX Testing groups. If the majority of the testing groups agrees with the issue, move to step 3. If the majority of the testing groups does not see the issue, mark issue as resolved. If results are inconclusive, widen testing groups.
+Present the perceived issue to the UX Testing groups and observe whether the issue exists for the users. If the issue exists for users, move to step 3. If the majority of the testing groups does not see the issue, mark issue as resolved. If results are inconclusive, widen testing groups.
 
 ### 3. Develop a Solution.
 
@@ -36,4 +36,4 @@ Develop a prototype for a solution. This does not yet need to be executable code
 
 ### 4. Test the Solution
 
-Present the testing groups with the solution in a screen-shared call. Let the testing group interact with the solution and give them tasks to perform to see if the solution solves the problem. This process should be documented (e.g. screen-recorded) to give insights into interactions with the product in general and clearly identify other potential pain points. If the majority of the testing groups sees the issue as resolved develop executable code and merge to master. If the solution does not solve the issue return to 3.
+Present the testing groups with the solution in a screen-shared call. Let the testing group interact with the solution and give them tasks to perform to see if the solution solves the problem. This process should be documented (e.g. screen-recorded) to give insights into interactions with the product in general and clearly identify other potential pain points. If the issue is resolved for the majority of the testing groups develop executable code and merge to master. If the solution does not solve the issue return to 3.
