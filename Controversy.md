@@ -5,7 +5,7 @@ zIP: 5
 Layer: Company
 Title: Controversy
 Author: nopara73, David Molnar
-Status: Active
+Status: Obsolete
 Type: Process
 Created: 2022-10-02
 License: lol
