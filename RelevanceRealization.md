@@ -6,7 +6,7 @@ Layer: Development
 Title: Relevance Realization
 Author: nopara73, David Palhazi
 Status: Proposed
-Type: Process
+Type: Active
 Created: 2022-11-29
 License: lol
 ```
