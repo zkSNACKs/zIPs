@@ -18,10 +18,10 @@ The goal is with that zIP to collect and write down the actively used relevance 
   
 
 ## Ewoks
-Ewoks own the ewok board. Their work starts with the Backlog, to which anyone can add items, as well all the issues ever opened in Wasabi Wallet GitHub repository are getting added here automatically.
-Ewoks take the backlog and process it: ewoks may archive a card, put it into Triaged, into Minefield, into Not Now or into Done buckets.
-If the ewoks put a card into Triaged, then they must set a Project, estimate its Importance, Urgency and Size.
-Triaged is where the work of Coordinators start.
+Ewoks own the `ewok` board. Their work starts with the `Backlog`, to which anyone can add items, as well all the issues ever opened in Wasabi Wallet GitHub repository are getting added here automatically.
+Ewoks take the backlog and process it: ewoks may archive a card, put it into `Triaged`, into `Minefield`, into `Not Now` or into `Done` buckets.
+If the ewoks put a card into `Triaged`, then they must set a `Project`, estimate its `Importance`, `Urgency` and `Size`.
+`Triaged` is where the work of Coordinators start.
 
 ## Coordinator
 A Coordinator is a person that coordinates different boards within the Relevance Realization project. Coordinators MUST oversee, understand and maintain their boards.
@@ -43,19 +43,19 @@ Coordinators should try to collapse multiple issues into single cards. For examp
 ### Meeting KATA
 
 0. Is there anything important to discuss?
-0. Filter tasks: urgency:"asap💚" // work that must be done ASAP
-0. Discuss Doing bucket // don't forget about ongoing works
-0. Filter tasks: importance:"must💚"
-0. Filter tasks: size:"small💚" // low hanging fruits
+0. Filter tasks: `urgency:"asap💚"` // work that must be done ASAP
+0. Discuss `Doing` bucket // don't forget about ongoing works
+0. Filter tasks: `importance:"must💚"`
+0. Filter tasks: `size:"small💚"` // low hanging fruits
 0. Is there anything else to discuss?
 
 
 ### Card KATA
 
 0. Are there similar cards or work to be done from what we can create a single card out of?
-0. Did ewoks set Project, Importance, Urgency and Size correctly?
-0. Is there any task that should be done before this? If yes, then place it into Parking and link to it in Waiting For property of the card.
-0. Is there any task that relies on this card? If yes, then link to it in Follow-up Action property of the card.
-0. If issue is in the Doing status must add Assignees to the card the doers and their coordinator as well.   
-0. If possible Next Action shall be filled out. If the card gets into the Doing, then Next Action is required to be filled out.
+0. Did `ewoks` set `Project`, `Importance`, `Urgency` and `Size` correctly?
+0. Is there any task that should be done before this? If yes, then place it into `Parking` and link to it in `Waiting For` property of the card.
+0. Is there any task that relies on this card? If yes, then link to it in `Follow-up Action` property of the card.
+0. If issue is in the `Doing` status must add `Assignees` to the card the doers and their coordinator as well.   
+0. If possible `Next Action` shall be filled out. If the card gets into the `Doing`, then `Next Action` is required to be filled out.
 
