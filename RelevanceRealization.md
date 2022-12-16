@@ -56,6 +56,6 @@ Coordinators should try to collapse multiple issues into single cards. For examp
 0. Did `ewoks` set `Project`, `Importance`, `Urgency` and `Size` correctly?
 0. Is there any task that should be done before this? If yes, then place it into `Parking` and link to it in `Waiting For` property of the card.
 0. Is there any task that relies on this card? If yes, then link to it in `Follow-up Action` property of the card.
-0. If issue is in the Doing status must add Assignees to the card the doers and their coordinator as well.   
+0. If issue is in the `Doing` status must add `Assignees` to the card the doers and their coordinator as well.   
 0. If possible `Next Action` shall be filled out. If the card gets into the `Doing`, then `Next Action` is required to be filled out.
 
