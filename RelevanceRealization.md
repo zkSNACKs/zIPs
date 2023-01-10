@@ -52,6 +52,8 @@ Coordinators should try to collapse multiple issues into single cards. For examp
 
 ### Card KATA
 
+0. Do we really need this now? Consider putting the card into `Not Now`
+0. Do we expect high casualties while working on this? Consider putting the card into `Minefield`
 0. Are there similar cards or work to be done from what we can create a single card out of?
 0. Did `ewoks` set `Project`, `Importance`, `Urgency` and `Size` correctly?
 0. Is there any task that should be done before this? If yes, then place it into `Parking` and link to it in `Waiting For` property of the card.
