@@ -1,10 +1,24 @@
+# Round Robin
+
+```
+zIP: 7
+Layer: Development
+Title: Round Robin
+Author: molnard, pule08
+Status: Proposed
+Type: Active
+Created: 2023-03-30
+License: lol
+```
+
+
 ## Motivation 
 
-This procedure avoid to wasting time on contraversal items for example implementing or working on items those are not backed up by consensus. Working on contraversial items lead to arguments, frustration and escalation of the debate that takes up more and more resources. These tendencies need to be caught at earliest stage. 
+This process prevents working on controversial items lacking consensus, as it can lead to unproductive arguments, frustration, and further energy expenditure from our team members. Early detection of these tendencies is crucial to avoid wasting time and resources.
 
 ## Abstract 
 
-Sometimes item in the relevance realization board aka RR board hard to be evaulated by the team leader. In that case the team leader can decide to inwoke a round robin discussion. on the discussion relevant people reach for a consensus of future of the item.
+At times, certain items on the relevance realization board (RR board) may be challenging for the team leader to evaluate. In such cases, the team leader may choose to initiate a Round Robin discussion. During this discussion, relevant team members collaborate to reach a consensus on the item's future.
 
 ## Process
 
@@ -17,3 +31,10 @@ Sometimes item in the relevance realization board aka RR board hard to be evaula
 7. On the meeting the topic discussed until the Teamleader can make the decision what to do with the item. After that the team leader act accordingly. 
 
 
+
+If an item appears in the triage column of the project board, the team leader may find it challenging to evaluate without further information.
+In this case, the team leader or coordinator creates an item with a proper description on the round robin project board, making it a candidate for discussion.
+During the weekly team meeting, the team leader brings up the candidates and the team decides whether the item is worth discussing. At this stage, there is no time for extended debate; only the worthiness of the item is considered.
+Based on the result of the votes, the team leader makes a decision and acts accordingly on the RR board.
+If the decision is not clear, the coordinator schedules a meeting and invites relevant team members or those who are already involved in the issue.
+During the meeting, the topic is discussed until the team leader can make a decision on what to do with the item. After that, the team leader takes appropriate action. Like moving item to Will Do status, or not not or Minefield. 
