@@ -27,7 +27,7 @@ At times, certain items on the `relevance realization` board (RR board) may be c
 3. During the weekly team meeting, the team leader brings up the candidates and the team decides whether the item is worth discussing. At this stage, there is no time for extended debate; only the worthiness of the item is considered.
 4. Based on the result of the votes, the team leader either able to make a decision and act accordingly on the `RR` board or request a `Round Robin` meeting to get more details and opinion.
 5. The coordinator schedules a `Round Robin` meeting and invites relevant team members or those who are already involved in the issue.
-6. During the `Round Robin` meeting, the topic is discussed until the team leader can make a decision on what to do with the item. After that, the team leader takes appropriate action. Like moving item to Will Do status, or not not or Minefield. 
+6. During the `Round Robin` meeting, the topic is discussed until the team leader can make a decision on what to do with the item. After that, the team leader takes appropriate action. Like moving item to Will Do status, or Not now or Minefield. 
 
 
 
