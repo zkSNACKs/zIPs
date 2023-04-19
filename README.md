@@ -8,3 +8,4 @@
 | [4](https://github.com/zkSNACKs/zIPs/blob/master/WasabiPressKit.zip)          | Communication | zkSNACKs Press Kit                                                      | Norbert Lévai | Informational | Active   |
 | [5](https://github.com/zkSNACKs/zIPs/blob/master/Controversy.md) | Company | Controversy | nopara73 | Process | Obsolete |
 | [6](https://github.com/zkSNACKs/zIPs/blob/master/RelevanceRealization.md) | Development | Relevance Realization | nopara73 | Process | Active |
+| [7] | Development | Round Robin | molnard | Process | Active |
