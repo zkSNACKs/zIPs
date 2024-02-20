@@ -18,7 +18,11 @@ As long as Bitcoin is the largest cryptocurrency, dealing with altcoins is a lik
 
 ### .NET/C# Only
 
-Things work best if we all speak the same language and this language is C#. 
+Things work best if we all speak the same language and this language is C#.
+
+### GitHub is our swiss army knife
+
+GitHub is our primary tool for managing all tasks and ideas within the company. As a fundamental principle, we encourage all team members to use GitHub on a daily basis for all company-related work. If there is a particular task or idea that cannot be completed through GitHub, the owner of the idea is responsible for providing a written explanation as to why it is not possible.
 
 ### Accept Bitcoin
 
